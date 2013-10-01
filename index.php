@@ -28,7 +28,7 @@
 
         <p>您不需要離開家門一步，即可在線上完成訂購的過程，<br>只要輕鬆的動動手指頭，輸入一些資料，<br>傳情就會變得無比自在！</p>
 
-        <form role="form" action="submit.php" method="post">
+        <form role="form" action="submit.php" method="post" onsubmit="return validate_form();">
           <ul class="nav nav-tabs" id="form-tab">
             <li class="active"><a href="#form-you" data-toggle="tab">STEP I：關於您</a></li>
             <li><div style="display: inline-block; padding: 10px 15px;"> → </div></li>
@@ -570,7 +570,7 @@
         $('#form-tab a[href="#form-product"]').tab('show');
       });
 
-      function validate_email(field, group){
+      function validate_email(field, group) {
         apos = $(field).val().indexOf("@");
         dotpos = $(field).val().lastIndexOf(".");
         if (apos < 1 || dotpos-apos < 2){
@@ -588,8 +588,7 @@
         }
       }
 
-      function validate_required(field, group){
-
+      function validate_required(field, group) {
         if ($(field).val() == null || $(field).val() == "" || $(field).val() == "false"){
           $(group).addClass("has-error");
           $(group).addClass("animated");
@@ -598,12 +597,50 @@
           $(group).keydown(function(){
             $(group).removeClass("has-error");
           });
-
           return false;
         }else{
           $(group).removeClass("has-error");
           return true;
         }
+      }
+
+      function validate_form() {
+        if (validate_required('#name', '.group-name') == false){
+          $('#form-tab a[href="#form-you"]').tab('show');
+          $('#name').focus();
+          return false;
+        }
+
+        if (validate_email('#email', '.group-email') == false){
+          $('#form-tab a[href="#form-you"]').tab('show');
+          $('#email').focus();
+          return false;
+        }
+
+        if (validate_required('#phone', '.group-phone') == false){
+          $('#form-tab a[href="#form-you"]').tab('show');
+          $('#email').focus();
+          return false;
+        }
+
+        if (validate_required('#recipient-name', '.group-recipient-name') == false){
+          $('#form-tab a[href="#form-recipient"]').tab('show');
+          $('#recipient-name').focus();
+          return false;
+        }
+
+        if (validate_required('#recipient-school', '.group-recipient-school')
+ == false){
+          $('#form-tab a[href="#form-recipient"]').tab('show');
+          $('#recipient-school').focus();
+          return false;
+        }
+
+        if (product_total() < 1) {
+          alert('請至少選擇一樣商品！');
+          return false;
+        }
+
 
       }
 
