@@ -628,7 +628,7 @@
 
       function validate_form() {
         if ( $("#to-myself").prop('checked') )
-          $("recipient-name").val($("name").val);
+          $("#recipient-name").val($("#name").val());
 
         if (validate_required('#name', '.group-name') == false){
           $('#form-tab a[href="#form-you"]').tab('show');
@@ -773,7 +773,7 @@
           $(".m4").text('你的年級');
           $(".m5").addClass('displaynone');
           $(".m6").text('你的宿舍');
-          $("recipient-name").val($("name").val);
+          $("#recipient-name").val($("#name").val());
 
         } else {
           $(".mn").removeClass('displaynone');
