@@ -648,6 +648,15 @@
           return false;
         }
 
+        if (window.document.readyState != null && window.document.readyState != 'complete') {
+          if (window.document.readyState == 'interactive'){
+            return true;
+          } else {
+            alert("處理中，請稍候！");
+            return false;
+          }
+        }
+
 
       }
 
