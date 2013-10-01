@@ -49,7 +49,7 @@
     $message = "<p>親愛的 ".$_POST['name']."，您好！</p>";
     $message = $message."<p>感謝您參加由台灣科技大學系學會協辦的「花顏巧語 2013」巧克力傳情活動，以下是您的訂購明細，請在確認無誤後，憑此郵件於 10/7 ~ 10/21 週一至週五中午 12:00 - 傍晚 6:30 間，親臨台科大郵局前的「花顏巧語」攤位現金繳納 NT$".$money."。</p>若您不克前來，也可以直接將應付金額直接轉帳至 XXXX，並於轉帳後直接回覆此郵件，告知 1. 轉出帳戶末五碼 2. 轉帳時間 3. 轉帳金額，我們在收到回覆後將收據寄給您。</p><p>注意：付款完成後才算完成定訂購！請在確認資料無誤後再行付款，若有錯誤請重新填寫、並請勿繳款！任何問題歡迎至我們的 FB 專頁詢問。</p><p>付款截止日期：10/21 晚上六點。所有巧克力皆會在 12/9 前發送完畢。</p>";
     $message = $message.'<table border="0">';
-    $message = $message."<tr><td><b>訂單編號　</b></td><td>".$no."</td></tr>";
+    $message = $message."<tr><td><b>訂單編號　</b></td><td>WW0".$no."</td></tr>";
     $message = $message."<tr><td><b>您的電話　</b></td><td>".$_POST['phone']."</td></tr>";
     $message = $message."<tr><td><b>您的班級　</b></td><td>".$_POST['class']."</td></tr>";
     $message = $message."<tr><td><b>您的巧克力　</b></td><td>";
@@ -106,9 +106,35 @@
 
     //寫進表單
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "http://SomeDomain/SamplePath");
+    curl_setopt($ch, CURLOPT_URL, "https://docs.google.com/forms/d/1Nhj03zmODNI6KbW3lJKD008vbYPYWljTD49O39L8t8s/formResponse");
     curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query( array( "a"=>"123", "b"=>"321") ));
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query( array(
+      "entry.1066297702" => $no,
+      "entry.1018475685" => $_POST['name'],
+      "entry.1941561794" => $_POST['email'],
+      "entry.1581684100" => $_POST['phone'],
+      "entry.1318035240" => $_POST['class'],
+      "entry.118184662" => $_POST['recipient-name'],
+      "entry.228049794" => $_POST['recipient-school'],
+      "entry.1445623684" => $_POST['recipient-department'],
+      "entry.237284313" => $_POST['recipient-grade'],
+      "entry.1898389999" => $_POST['recipient-phone'],
+      "entry.937518842" => $_POST['recipient-dorm'],
+      "entry.542135735" => $_POST['product-1'],
+      "entry.257418552" => $_POST['product-2'],
+      "entry.1524029615" => $_POST['product-3'],
+      "entry.1068504461" => $_POST['product-4'],
+      "entry.826455496" => $_POST['product-5'],
+      "entry.440679750" => $_POST['product-6'],
+      "entry.2066500051" => $_POST['product-7'],
+      "entry.310943758" => $_POST['product-8'],
+      "entry.357660496" => $_POST['product-9'],
+      "entry.1067708279" => $_POST['product-10'],
+      "entry.1590256053" => $_POST['product-11'],
+      "entry.256800263" => $_POST['product-12'],
+      "entry.356257608" => $_POST['message'],
+      "entry.957291139" => $money
+      ) ));
     $post_result = curl_exec($ch);
     curl_close($ch);
 
