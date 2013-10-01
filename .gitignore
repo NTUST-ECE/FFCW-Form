@@ -1,2 +1,4 @@
 .DS_Store
+no
+config.ru
 .sass-cache/
