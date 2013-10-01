@@ -57,3 +57,17 @@ select {
 .thumbnail .description {
   height: 220px;
 }
+
+/* line 58, ../sass/screen.scss */
+#bill {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+
+/* line 65, ../sass/screen.scss */
+.fix-bottom {
+  position: fixed;
+  bottom: 0;
+}

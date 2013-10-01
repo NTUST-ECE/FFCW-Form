@@ -54,3 +54,15 @@ select {
 		height: 220px;
 	}
 }
+
+#bill {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #fff;
+}
+
+.fix-bottom {
+	position: fixed;
+	bottom: 0;
+}

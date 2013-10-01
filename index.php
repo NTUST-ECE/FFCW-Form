@@ -42,21 +42,21 @@
             <div class="tab-pane active form-horizontal" id="form-you">
               <h2>STEP I：關於您</h2>
               <div class="form-group group-name">
-                <label class="col-lg-4 control-label" for="name">您的姓名</label>
+                <label class="col-lg-4 control-label" for="name">您的姓名 *</label>
                 <div class="col-lg-6">
                   <input name="name" class="form-control" id="name" onBlur="validate_required('#name', '.group-name')">
                 </div>
               </div>
               <div class="form-group group-email">
-                <label class="col-lg-4 control-label" for="email">Email</label>
+                <label class="col-lg-4 control-label" for="email">Email *</label>
                 <div class="col-lg-6">
                   <input name="email" type="email" class="form-control" id="email" onBlur="validate_email('#email', '.group-email')">
                 </div>
               </div>
               <div class="form-group group-phone">
-                <label class="col-lg-4 control-label" for="phone">聯絡電話</label>
+                <label class="col-lg-4 control-label" for="phone">聯絡電話 *</label>
                 <div class="col-lg-6">
-                  <input name="phone" type="tel" class="form-control" id="phone" placeholder="">
+                  <input name="phone" type="tel" class="form-control" id="phone" onBlur="validate_required('#phone', '.group-phone')">
                 </div>
               </div>
               <div class="form-group group-class">
@@ -73,15 +73,15 @@
               <h2>STEP II：關於他／她</h2>
               <p>請仔細填寫，可別讓您的情不知去向囉～</p>
               <div class="form-group group-recipient-name">
-                <label class="col-lg-4 control-label" for="recipient-name">收件人姓名</label>
+                <label class="col-lg-4 control-label" for="recipient-name">收件人姓名 *</label>
                 <div class="col-lg-6">
-                  <input name="recipient-name" class="form-control" id="recipient-name" placeholder="">
+                  <input name="recipient-name" class="form-control" id="recipient-name" onBlur="validate_required('#recipient-name', '.group-recipient-name')">
                 </div>
               </div>
               <div class="form-group group-recipient-school">
-                <label class="col-lg-4 control-label" for="recipient-school">收件人學校</label>
+                <label class="col-lg-4 control-label" for="recipient-school">收件人學校 *</label>
                 <div class="col-lg-6">
-                  <select name="recipient-school" id="recipient-school" style="display: block;">
+                  <select name="recipient-school" id="recipient-school" style="display: block;" onBlur="validate_required('#recipient-school', '.group-recipient-school')">
                     <option></option>
                     <optgroup label="台北">
                       <option value="台灣海洋大學">台灣海洋大學</option>
@@ -249,7 +249,7 @@
                     </div>
                     <div class="caption">
                       <p>數量：
-                        <select name="product-1" class="form-control">
+                        <select name="product-1" id="product-1" class="form-control product-amount">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -272,7 +272,7 @@
                     </div>
                     <div class="caption">
                       <p>數量：
-                        <select name="product-2" class="form-control">
+                        <select name="product-2" id="product-2" class="form-control product-amount">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -295,7 +295,7 @@
                     </div>
                     <div class="caption">
                       <p>數量：
-                        <select name="product-3" class="form-control">
+                        <select name="product-3" id="product-3" class="form-control product-amount">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -318,7 +318,7 @@
                     </div>
                     <div class="caption">
                       <p>數量：
-                        <select name="product-4" class="form-control">
+                        <select name="product-4" id="product-4" class="form-control product-amount">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -341,7 +341,7 @@
                     </div>
                     <div class="caption">
                       <p>數量：
-                        <select name="product-5" class="form-control">
+                        <select name="product-5" id="product-5" class="form-control product-amount">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -364,7 +364,7 @@
                     </div>
                     <div class="caption">
                       <p>數量：
-                        <select name="product-6" class="form-control">
+                        <select name="product-6" id="product-6" class="form-control product-amount">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -387,7 +387,7 @@
                     </div>
                     <div class="caption">
                       <p>數量：
-                        <select name="product-7" class="form-control">
+                        <select name="product-7" id="product-7" class="form-control product-amount">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -411,7 +411,7 @@
                     </div>
                     <div class="caption">
                       <p>數量：
-                        <select name="product-8" class="form-control">
+                        <select name="product-8" id="product-8" class="form-control product-amount">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -434,7 +434,7 @@
                     </div>
                     <div class="caption">
                       <p>數量：
-                        <select name="product-9" class="form-control">
+                        <select name="product-9" id="product-9" class="form-control product-amount">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -457,7 +457,7 @@
                     </div>
                     <div class="caption">
                       <p>數量：
-                        <select name="product-10" class="form-control">
+                        <select name="product-10" id="product-10" class="form-control product-amount">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -481,7 +481,7 @@
                     </div>
                     <div class="caption">
                       <p>數量：
-                        <select name="product-11" class="form-control">
+                        <select name="product-11" id="product-11" class="form-control product-amount">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -504,7 +504,7 @@
                     </div>
                     <div class="caption">
                       <p>數量：
-                        <select name="product-12" class="form-control">
+                        <select name="product-12" id="product-12" class="form-control product-amount">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -522,6 +522,12 @@
               <p>我要傳送訊息：(<input style="border: none; text-align: right; width: 18px;" readonly type="text" name="messagecount" size="3" value="50">/50 字內)</p>
               <textarea name="message" class="form-control message" rows="3" onKeyDown="limitText(this.form.message, this.form.messagecount, 50);" onKeyUp="limitText(this.form.message, this.form.messagecount, 50);"></textarea>
               <p>您也可以在親臨攤位繳費時，將親手寫的卡片交給我們！</p>
+
+              <hr>
+
+              <div id="bill-container"><div id="bill" class="fix-bottom">
+                <h2>應付總金額：NT$<span class="money-sum">40</span>。</h2>
+              </div></div>
 
               <hr>
               <a style="float: left;" class="btn btn-default btn-lg to-step-two">← 上一步</a>
@@ -578,6 +584,7 @@
           });
           return false
         }else{
+          $(group).removeClass("has-error");
           return true
         }
       }
@@ -595,25 +602,36 @@
 
           return false;
         }else{
+          $(group).removeClass("has-error");
           return true;
         }
 
       }
 
-      function validate_check(field, group){
-        with (field){
-          if (checked != true){
-            alert("您必須閱讀並同意注意事項。");
-            $(group).addClass("has-error");
-            $(group).addClass("animated");
-            $(group).addClass("shake");
-            setTimeout('$(".form-group").removeClass("shake")', 1000);
-            return false;
-          }else{
-            return true;
-          }
-        }
+      function product_total() {
+        return $("#product-1").val()*70 + $("#product-2").val()*90 + $("#product-3").val()*90 + $("#product-4").val()*120 + $("#product-5").val()*120 + $("#product-6").val()*150 + $("#product-7").val()*180 + $("#product-8").val()*180 + $("#product-9").val()*200 + $("#product-10").val()*230 + $("#product-11").val()*250 + $("#product-12").val()*350;
       }
+
+      function cashier() {
+        if ($('#recipient-school').val() == "台灣科技大學") {
+          $(".money-sum").text(product_total() + 30);
+          return product_total() + 30;
+        }
+
+        else {
+          $(".money-sum").text(product_total() + 40);
+          return product_total() + 40;
+        }
+
+      }
+
+
+      $(".product-amount").change(function() {
+        cashier();
+      });
+      $("#recipient-school").change(function() {
+        cashier();
+      });
 
       function limitText(limitField, limitCount, limitNum) {
         if (limitField.value.length > limitNum) {
@@ -622,6 +640,20 @@
           limitCount.value = limitNum - limitField.value.length;
         }
       }
+
+      $(window).scroll(function() {
+        cashier();
+        $('#bill-container').height( $('#bill').height() + 20 );
+        $('#bill').width( $('.container').width() );
+
+        if (($('#bill-container').offset().top + $('#bill-container').height() ) - ($(window).scrollTop() + $(window).height()) >= 0)
+          $('#bill').addClass('fix-bottom');
+        else
+          $('#bill').removeClass('fix-bottom');
+        console.log(($('#bill').offset().top + $('#bill').height() ) - ($(window).scrollTop() + $(window).height()));
+      });
+
+
 
     </script>
   </body>
