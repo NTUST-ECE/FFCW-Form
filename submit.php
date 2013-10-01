@@ -19,14 +19,18 @@
   	<pre>
 <?php
 
-  if ($_POST['name'] != '') {
+  if ($_POST['name'] != '' && file_exists('no')) {
 
     //流水號
-    $file = fopen("no", "w+");
+    $file = fopen("no", "r");
     $no = fgets($file);
+    fclose($file);
+
     if ($no == "")
       $no = 10;
     $no++;
+
+    $file = fopen("no", "w+");
     fwrite($file,$no);
     fclose($file);
 
