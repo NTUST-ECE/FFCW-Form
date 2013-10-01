@@ -54,29 +54,29 @@
     $message = $message."<tr><td><b>您的班級　</b></td><td>".$_POST['class']."</td></tr>";
     $message = $message."<tr><td><b>您的巧克力　</b></td><td>";
     if ($_POST['product-1'] > 0)
-      $message = $message."訊息巧克力 x".$_POST['product-1']."<br>";
+      $message = $message."訊息巧克力 ×".$_POST['product-1']."<br>";
     if ($_POST['product-2'] > 0)
-      $message = $message."冬季戀歌 x".$_POST['product-2']."<br>";
+      $message = $message."冬季戀歌 ×".$_POST['product-2']."<br>";
     if ($_POST['product-3'] > 0)
-      $message = $message."快樂旅行家 x".$_POST['product-3']."<br>";
+      $message = $message."快樂旅行家 ×".$_POST['product-3']."<br>";
     if ($_POST['product-4'] > 0)
-      $message = $message."幸福寶貝熊 x".$_POST['product-4']."<br>";
+      $message = $message."幸福寶貝熊 ×".$_POST['product-4']."<br>";
     if ($_POST['product-5'] > 0)
-      $message = $message."環遊聖誕 x".$_POST['product-5']."<br>";
+      $message = $message."環遊聖誕 ×".$_POST['product-5']."<br>";
     if ($_POST['product-6'] > 0)
-      $message = $message."敞開心扉 x".$_POST['product-6']."<br>";
+      $message = $message."敞開心扉 ×".$_POST['product-6']."<br>";
     if ($_POST['product-7'] > 0)
-      $message = $message."幸福愛戀塔 x".$_POST['product-7']."<br>";
+      $message = $message."幸福愛戀塔 ×".$_POST['product-7']."<br>";
     if ($_POST['product-8'] > 0)
-      $message = $message."寶貝熊禮盒 x".$_POST['product-8']."<br>";
+      $message = $message."寶貝熊禮盒 ×".$_POST['product-8']."<br>";
     if ($_POST['product-9'] > 0)
-      $message = $message."72% 烘焙巧克力麻布袋 x".$_POST['product-9']."<br>";
+      $message = $message."72% 烘焙巧克力麻布袋 ×".$_POST['product-9']."<br>";
     if ($_POST['product-10'] > 0)
-      $message = $message."聖誕傳情 x".$_POST['product-10']."<br>";
+      $message = $message."聖誕傳情 ×".$_POST['product-10']."<br>";
     if ($_POST['product-11'] > 0)
-      $message = $message."甜心熊禮盒 x".$_POST['product-11']."<br>";
+      $message = $message."甜心熊禮盒 ×".$_POST['product-11']."<br>";
     if ($_POST['product-12'] > 0)
-      $message = $message."草莓守護熊 x".$_POST['product-12']."<br>";
+      $message = $message."草莓守護熊 ×".$_POST['product-12']."<br>";
 
     $message = $message."</td></tr>";
     $message = $message."<tr><td><b>要送給　</b></td><td>".$_POST['recipient-school'].$_POST['recipient-department']." 的 ".$_POST['recipient-name']."</td></tr>";

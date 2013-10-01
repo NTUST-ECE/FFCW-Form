@@ -32,7 +32,7 @@
           <ul class="nav nav-tabs" id="form-tab">
             <li class="active"><a href="#form-you" data-toggle="tab">STEP I：關於您</a></li>
             <li><div style="display: inline-block; padding: 10px 15px;"> → </div></li>
-            <li><a href="#form-recipient" data-toggle="tab">STEP II：關於他／她</a></li>
+            <li><a href="#form-recipient" class="m1" data-toggle="tab">STEP II：關於他／她</a></li>
             <li><div style="display: inline-block; padding: 10px 15px;"> → </div></li>
             <li><a href="#form-product" data-toggle="tab">STEP III：選擇禮物</a></li>
           </ul>
@@ -70,16 +70,22 @@
             </div>
 
             <div class="tab-pane form-horizontal" id="form-recipient">
-              <h2>STEP II：關於他／她</h2>
-              <p>請仔細填寫，可別讓您的情不知去向囉～</p>
-              <div class="form-group group-recipient-name">
+              <h2 class="m1">STEP II：關於他／她</h2>
+              <div class="checkbox">
+                <label class="to-myself">
+                  <input type="checkbox" value="" id="to-myself">
+                  我要送給自己
+                </label>
+              </div>
+              <p class="mn">請仔細填寫，可別讓您的情意不知去向囉～</p>
+              <div class="form-group group-recipient-name mn">
                 <label class="col-lg-4 control-label" for="recipient-name">收件人姓名 *</label>
                 <div class="col-lg-6">
                   <input name="recipient-name" class="form-control" id="recipient-name" onBlur="validate_required('#recipient-name', '.group-recipient-name')">
                 </div>
               </div>
               <div class="form-group group-recipient-school">
-                <label class="col-lg-4 control-label" for="recipient-school">收件人學校 *</label>
+                <label class="col-lg-4 control-label m2" for="recipient-school">收件人學校 *</label>
                 <div class="col-lg-6">
                   <select name="recipient-school" id="recipient-school" style="display: block;" onBlur="validate_required('#recipient-school', '.group-recipient-school')">
                     <option></option>
@@ -209,27 +215,27 @@
                   </select>
                 </div>
               </div>
-              <p>能填就盡量填～資料越完整，我們就能能越快速為您送達！</p>
+              <p class="mn">知道的就盡量填～資料越完整，我們就能能越快速為您送達！</p>
               <div class="form-group group-recipient-department">
-                <label class="col-lg-4 control-label" for="recipient-department">收件人系所</label>
+                <label class="col-lg-4 control-label m3" for="recipient-department">收件人系所</label>
                 <div class="col-lg-6">
                   <input name="recipient-department" class="form-control" id="recipient-department">
                 </div>
               </div>
               <div class="form-group group-recipient-grade">
-                <label class="col-lg-4 control-label" for="recipient-grade">收件人年級</label>
+                <label class="col-lg-4 control-label m4" for="recipient-grade">收件人年級</label>
                 <div class="col-lg-6">
                   <input name="recipient-grade" class="form-control" id="recipient-grade">
                 </div>
               </div>
-              <div class="form-group group-recipient-phone">
+              <div class="form-group group-recipient-phone m5">
                 <label class="col-lg-4 control-label" for="recipient-phone">收件人聯絡電話</label>
                 <div class="col-lg-6">
                   <input name="recipient-phone" type="tel" class="form-control" id="recipient-phone">
                 </div>
               </div>
               <div class="form-group group-recipient-dorm">
-                <label class="col-lg-4 control-label" for="recipient-dorm">收件人宿舍</label>
+                <label class="col-lg-4 control-label m6" for="recipient-dorm">收件人宿舍</label>
                 <div class="col-lg-6">
                   <input name="recipient-dorm" class="form-control" id="recipient-dorm">
                 </div>
@@ -241,7 +247,7 @@
             </div>
 
             <div class="tab-pane" id="form-product">
-              <h2>STEP III：選擇心意</h2>
+              <h2>STEP III：選擇禮品</h2>
 
               <div class="row products">
                 <div class="col-md-4">
@@ -524,20 +530,26 @@
                 </div>
               </div>
 
+              <div id="bill-container"><div id="bill" class="fix-bottom">
+                <h2>應付總金額：NT$<span class="money-sum">40</span></h2>
+                <p>基本費 $40<span class="product-total-message"></span><span class="ntust-discount"></span> + 情意無價。</p>
+              </div></div>
+
               <hr>
-              <p>我要傳送訊息：(<input style="border: none; text-align: right; width: 18px;" readonly type="text" name="messagecount" size="3" value="50">/50 字內)</p>
-              <textarea name="message" class="form-control message" rows="3" onKeyDown="limitText(this.form.message, this.form.messagecount, 50);" onKeyUp="limitText(this.form.message, this.form.messagecount, 50);"></textarea>
+              <h2>免費卡片</h2>
+              <p>我要傳送訊息，請幫我代寫：(<input style="border: none; text-align: right; width: 18px;" readonly type="text" name="messagecount" size="3" value="50">/50 字內)</p>
+              <textarea name="message" class="form-control message" rows="5" onKeyDown="limitText(this.form.message, this.form.messagecount, 50);" onKeyUp="limitText(this.form.message, this.form.messagecount, 50);"></textarea>
               <p>您也可以在親臨攤位繳費時，將親手寫的卡片交給我們！</p>
 
               <hr>
 
-              <div id="bill-container"><div id="bill" class="fix-bottom">
-                <h2>應付總金額：NT$<span class="money-sum">40</span>。</h2>
-              </div></div>
+              <p>訂單送出後，我們會寄給你一封內含訂單編號的確認 Email，請查看並確認內容無誤後，依信內指示持訂單編號至攤位繳費、或轉帳繳款！</p>
+
+              <p>提醒您，付款完成拿到收據後，才算完成定購喔 ♥</p>
 
               <hr>
               <a style="float: left;" class="btn btn-default btn-lg to-step-two">← 上一步</a>
-              <div style="float: right;"><button type="submit" class="btn btn-primary btn-default btn-lg">確定送出</button></div>
+              <div style="float: right;"><button type="submit" class="btn btn-primary btn-default btn-lg">送出訂單</button></div>
             </div>
           </div>
 
@@ -551,7 +563,8 @@
 
     <div id="footer">
       <div class="container">
-        <p>　<br>花顏巧語 2013．巧克力傳情 ╳ 電影＋魔法石<br>主辦單位／社團法人中華民國校園社團發展協會　協辦單位／台灣科技大學電資學士班系學會<br>　</p>
+        <p>　<br>花顏巧語 2013．巧克力傳情 ╳ 電影＋魔法石<br>主辦單位／社團法人中華民國校園社團發展協會　協辦單位／台灣科技大學電資學士班系學會</p>
+        <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FFlowerFaceChocolateWords&amp;width=450&amp;height=80&amp;colorscheme=light&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;send=true&amp;appId=132913846761101" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>
       </div>
     </div>
 
@@ -614,6 +627,9 @@
       var sent = 0;
 
       function validate_form() {
+        if ( $("#to-myself").prop('checked') )
+          $("recipient-name").val($("name").val);
+
         if (validate_required('#name', '.group-name') == false){
           $('#form-tab a[href="#form-you"]').tab('show');
           $('#name').focus();
@@ -661,16 +677,51 @@
       }
 
       function product_total() {
+
+        product_total_message = "";
+
+        if ($("#product-1").val() > 0)
+          product_total_message = product_total_message + " + 訊息巧克力 $70×" + $("#product-1").val();
+        if ($("#product-2").val() > 0)
+          product_total_message = product_total_message + " + 冬季戀歌 $90×" + $("#product-2").val();
+        if ($("#product-3").val() > 0)
+          product_total_message = product_total_message + " + 快樂旅行家 $90×" + $("#product-3").val();
+        if ($("#product-4").val() > 0)
+          product_total_message = product_total_message + " + 幸福寶貝熊 $120×" + $("#product-4").val();
+        if ($("#product-5").val() > 0)
+          product_total_message = product_total_message + " + 環遊聖誕 $120×" + $("#product-5").val();
+        if ($("#product-6").val() > 0)
+          product_total_message = product_total_message + " + 敞開心扉 $150×" + $("#product-6").val();
+        if ($("#product-7").val() > 0)
+          product_total_message = product_total_message + " + 幸福愛戀塔 $180×" + $("#product-7").val();
+        if ($("#product-8").val() > 0)
+          product_total_message = product_total_message + " + 寶貝熊禮盒 $180×" + $("#product-8").val();
+        if ($("#product-9").val() > 0)
+          product_total_message = product_total_message + " + 72% 烘焙巧克力麻布袋 $200×" + $("#product-9").val();
+        if ($("#product-10").val() > 0)
+          product_total_message = product_total_message + " + 聖誕傳情 $230×" + $("#product-10").val();
+        if ($("#product-11").val() > 0)
+          product_total_message = product_total_message + " + 甜心熊禮盒 $250×" + $("#product-11").val();
+        if ($("#product-12").val() > 0)
+          product_total_message = product_total_message + " + 草莓守護熊 $350×" + $("#product-12").val();
+
+
+        $(".product-total-message").text(product_total_message);
+
+
+
         return $("#product-1").val()*70 + $("#product-2").val()*90 + $("#product-3").val()*90 + $("#product-4").val()*120 + $("#product-5").val()*120 + $("#product-6").val()*150 + $("#product-7").val()*180 + $("#product-8").val()*180 + $("#product-9").val()*200 + $("#product-10").val()*230 + $("#product-11").val()*250 + $("#product-12").val()*350;
       }
 
       function cashier() {
         if ($('#recipient-school').val() == "台灣科技大學") {
+          $(".ntust-discount").text(" - 118 大優惠 $10");
           $(".money-sum").text(product_total() + 30);
           return product_total() + 30;
         }
 
         else {
+          $(".ntust-discount").text("");
           $(".money-sum").text(product_total() + 40);
           return product_total() + 40;
         }
@@ -693,7 +744,7 @@
         }
       }
 
-      $(window).scroll(function() {
+      function viewRefresh() {
         cashier();
         $('#bill-container').height( $('#bill').height() + 20 );
         $('#bill').width( $('.container').width() );
@@ -702,8 +753,39 @@
           $('#bill').addClass('fix-bottom');
         else
           $('#bill').removeClass('fix-bottom');
+        setTimeout("viewRefresh()", 1000);
+      }
+      viewRefresh();
 
+      $(window).scroll(function() {
+        viewRefresh();
       });
+
+      $(".to-myself").click(function() {
+        toMySelf();
+      });
+      function toMySelf() {
+        if ( $("#to-myself").prop('checked') ) {
+          $(".mn").addClass('displaynone');
+          $(".m1").text('STEP II：關於您（二）');
+          $(".m2").text('你的學校 *');
+          $(".m3").text('你的系所');
+          $(".m4").text('你的年級');
+          $(".m5").addClass('displaynone');
+          $(".m6").text('你的宿舍');
+          $("recipient-name").val($("name").val);
+
+        } else {
+          $(".mn").removeClass('displaynone');
+          $(".m1").text('STEP II：關於他／她');
+          $(".m2").text('收件人學校 *');
+          $(".m3").text('收件人系所');
+          $(".m4").text('收件人年級');
+          $(".m5").removeClass('displaynone');
+          $(".m6").text('收件人宿舍');
+        }
+
+      }
 
 
 
