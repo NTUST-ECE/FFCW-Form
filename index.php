@@ -255,8 +255,8 @@
                     <img src="img/1.jpg" alt="">
                     <div class="caption description">
                       <h3>1. 訊息巧克力</h3>
-                      <p>內容：比利時純巧克力片 (4片/20g)</p>
-                      <p>包裝：11×3.5×1㎝ 方形塑膠盒</p>
+                      <p><b>內容：</b>比利時純巧克力片 (4片/20g)</p>
+                      <p><b>包裝：</b>11×3.5×1㎝ 方形塑膠盒</p>
                       <p>NT$70</p>
                     </div>
                     <div class="caption">
@@ -283,8 +283,8 @@
                     <img src="img/2.jpg" alt="">
                     <div class="caption description">
                       <h3>2. 冬季戀歌</h3>
-                      <p>內容：法國有機松露巧克力 (2入/20g)</p>
-                      <p>包裝：10.5×5.5×3.5㎝ 方形紙盒</p>
+                      <p><b>內容：</b>法國有機松露巧克力 (2入/20g)</p>
+                      <p><b>包裝：</b>10.5×5.5×3.5㎝ 方形紙盒</p>
                       <p>NT$90</p>
                     </div>
                     <div class="caption">
@@ -311,8 +311,8 @@
                     <img src="img/3.jpg" alt="">
                     <div class="caption description">
                       <h3>3. 快樂旅行家</h3>
-                      <p>內容：法國夾心巧克力 (3入/30g)</p>
-                      <p>包裝：12.5×10.3×2.8㎝ 手提箱造型紙盒</p>
+                      <p><b>內容：</b>法國夾心巧克力 (3入/30g)</p>
+                      <p><b>包裝：</b>12.5×10.3×2.8㎝ 手提箱造型紙盒</p>
                       <p>NT$90</p>
                     </div>
                     <div class="caption">
@@ -339,8 +339,8 @@
                     <img src="img/4.jpg" alt="">
                     <div class="caption description">
                       <h3>4. 幸福寶貝熊</h3>
-                      <p>內容：法國有機松露巧克力 (1入/10g) + Emma 熊</p>
-                      <p>包裝：1 入方形紙盒 + 玻璃紙套 + 蝴蝶緞帶</p>
+                      <p><b>內容：</b>法國有機松露巧克力 (1入/10g) + Emma 熊</p>
+                      <p><b>包裝：</b>1 入方形紙盒 + 玻璃紙套 + 蝴蝶緞帶</p>
                       <p>NT$120</p>
                     </div>
                     <div class="caption">
@@ -367,8 +367,8 @@
                     <img src="img/5.jpg" alt="">
                     <div class="caption description">
                       <h3>5. 環遊聖誕</h3>
-                      <p>內容：比利時夾心巧克力 (5入/25g)</p>
-                      <p>包裝：8.5×8.5×2.5㎝ 心形鐵盒</p>
+                      <p><b>內容：</b>比利時夾心巧克力 (5入/25g)</p>
+                      <p><b>包裝：</b>8.5×8.5×2.5㎝ 心形鐵盒</p>
                       <p>NT$120</p>
                     </div>
                     <div class="caption">
@@ -395,8 +395,8 @@
                     <img src="img/6.jpg" alt="">
                     <div class="caption description">
                       <h3>6. 敞開心扉</h3>
-                      <p>內容：法國夾心巧克力 (5入/50g)</p>
-                      <p>包裝：13.5×7×3.5㎝ 方形紙盒</p>
+                      <p><b>內容：</b>法國夾心巧克力 (5入/50g)</p>
+                      <p><b>包裝：</b>13.5×7×3.5㎝ 方形紙盒</p>
                       <p>NT$150</p>
                     </div>
                     <div class="caption">
@@ -423,8 +423,8 @@
                     <img src="img/7.jpg" alt="">
                     <div class="caption description">
                       <h3>7. 幸福愛戀塔</h3>
-                      <p>內容：法國原味有機松露巧克力 (5入/50g)</p>
-                      <p>包裝：10×10×13㎝ 方形錐紙盒 + 蝴蝶緞帶</p>
+                      <p><b>內容：</b>法國原味有機松露巧克力 (5入/50g)</p>
+                      <p><b>包裝：</b>10×10×13㎝ 方形錐紙盒 + 蝴蝶緞帶</p>
                       <p>NT$180</p>
                     </div>
                     <div class="caption">
@@ -451,8 +451,8 @@
                     <img src="img/8.jpg" alt="">
                     <div class="caption description">
                       <h3>8. 寶貝熊禮盒</h3>
-                      <p>內容：比利時純巧克力片 (4片/20g ) + Emma熊</p>
-                      <p>包裝：8.5×8.5×7㎝方形紙盒+蝴蝶緞帶</p>
+                      <p><b>內容：</b>比利時純巧克力片 (4片/20g ) + Emma熊</p>
+                      <p><b>包裝：</b>8.5×8.5×7㎝方形紙盒+蝴蝶緞帶</p>
                       <span class="label label-info">Emma 熊顏色隨機出貨</span>
                       <p>NT$180</p>
                     </div>
@@ -480,8 +480,8 @@
                     <img src="img/9.jpg" alt="">
                     <div class="caption description">
                       <h3>9. 72% 烘焙巧克力麻布袋</h3>
-                      <p>內容：西非聖多美島鈕扣巧克力 100g (72%烘培)</p>
-                      <p>包裝：麻布袋 + 蝴蝶緞帶</p>
+                      <p><b>內容：</b>西非聖多美島鈕扣巧克力 100g (72%烘培)</p>
+                      <p><b>包裝：</b>麻布袋 + 蝴蝶緞帶</p>
                       <p>NT$200</p>
                     </div>
                     <div class="caption">
@@ -508,8 +508,8 @@
                     <img src="img/10.jpg" alt="">
                     <div class="caption description">
                       <h3>10. 聖誕傳情</h3>
-                      <p>內容：比利時純巧克力片 (12片/60g)</p>
-                      <p>包裝：13.5×10×3㎝ 方型造型紙盒</p>
+                      <p><b>內容：</b>比利時純巧克力片 (12片/60g)</p>
+                      <p><b>包裝：</b>13.5×10×3㎝ 方型造型紙盒</p>
                       <p>NT$230</p>
                     </div>
                     <div class="caption">
@@ -536,8 +536,8 @@
                     <img src="img/11.jpg" alt="">
                     <div class="caption description">
                       <h3>11. 甜心熊禮盒</h3>
-                      <p>內容：比利時夾心巧克力 (4入/60g) + 甜心熊</p>
-                      <p>包裝：10.5×10.5×11.5㎝ 方形紙盒 + 蝴蝶緞帶</p>
+                      <p><b>內容：</b>比利時夾心巧克力 (4入/60g) + 甜心熊</p>
+                      <p><b>包裝：</b>10.5×10.5×11.5㎝ 方形紙盒 + 蝴蝶緞帶</p>
                       <span class="label label-info">禮盒顏色 (紅/粉) 隨機出貨</span>
                       <p>NT$250</p>
                     </div>
@@ -565,8 +565,8 @@
                     <img src="img/12.jpg" alt="">
                     <div class="caption description">
                       <h3>12. 草莓守護熊</h3>
-                      <p>內容：比利時草莓鈕扣巧克力 (65g) + Emma 熊</p>
-                      <p>包裝：12.5×8×9.5㎝ 方型塑膠盒 + 造型玻璃罐</p>
+                      <p><b>內容：</b>比利時草莓鈕扣巧克力 (65g) + Emma 熊</p>
+                      <p><b>包裝：</b>12.5×8×9.5㎝ 方型塑膠盒 + 造型玻璃罐</p>
                       <p>NT$350</p>
                     </div>
                     <div class="caption">
@@ -609,7 +609,7 @@
 
               <hr>
               <a style="float: left;" class="btn btn-default btn-lg to-step-two">← 上一步</a>
-              <div style="float: right;"><button type="submit" class="btn btn-primary btn-default btn-lg">送出訂單</button></div>
+              <div style="float: right;"><button type="submit" class="btn btn-primary btn-default btn-lg">送出訂單 (NT$<span class="money-sum">40</span>)</button></div>
             </div>
           </div>
 
