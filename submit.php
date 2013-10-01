@@ -80,6 +80,8 @@
 
     $message = $message."</td></tr>";
     $message = $message."<tr><td><b>要送給　</b></td><td>".$_POST['recipient-school'].$_POST['recipient-department']." 的 ".$_POST['recipient-name']."</td></tr>";
+    if ($_POST['recipient-grade'] == "")
+      $_POST['recipient-grade'] = "不知道";
     $message = $message."<tr><td><b>幸福的她／他，年級是</b></td><td>".$_POST['recipient-grade']."</td></tr>";
     if ($_POST['recipient-phone'] == "")
       $_POST['recipient-phone'] = "不知道";

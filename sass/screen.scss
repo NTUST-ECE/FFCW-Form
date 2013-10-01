@@ -40,6 +40,12 @@ select {
 	height: 34px;
 }
 
+.form-horizontal {
+	p {
+		margin-top: 10px;
+	}
+}
+
 .select2-container .select2-choice {
 	display: block;
 	height: 26 + 4*2px;
