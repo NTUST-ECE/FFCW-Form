@@ -209,23 +209,29 @@
                   </select>
                 </div>
               </div>
-              <p>資料越完整，能越快速為您送達～</p>
+              <p>能填就盡量填～資料越完整，我們就能能越快速為您送達！</p>
               <div class="form-group group-recipient-department">
                 <label class="col-lg-4 control-label" for="recipient-department">收件人系所</label>
                 <div class="col-lg-6">
-                  <input name="recipient-department" class="form-control" id="recipient-department" placeholder="">
+                  <input name="recipient-department" class="form-control" id="recipient-department">
                 </div>
               </div>
               <div class="form-group group-recipient-grade">
                 <label class="col-lg-4 control-label" for="recipient-grade">收件人年級</label>
                 <div class="col-lg-6">
-                  <input name="recipient-grade" class="form-control" id="recipient-grade" placeholder="">
+                  <input name="recipient-grade" class="form-control" id="recipient-grade">
                 </div>
               </div>
               <div class="form-group group-recipient-phone">
                 <label class="col-lg-4 control-label" for="recipient-phone">收件人聯絡電話</label>
                 <div class="col-lg-6">
-                  <input name="recipient-phone" type="tel" class="form-control" id="recipient-phone" placeholder="">
+                  <input name="recipient-phone" type="tel" class="form-control" id="recipient-phone">
+                </div>
+              </div>
+              <div class="form-group group-recipient-dorm">
+                <label class="col-lg-4 control-label" for="recipient-dorm">收件人宿舍</label>
+                <div class="col-lg-6">
+                  <input name="recipient-dorm" class="form-control" id="recipient-dorm">
                 </div>
               </div>
 
