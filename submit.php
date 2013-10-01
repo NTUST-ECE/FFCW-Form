@@ -16,7 +16,7 @@
     <![endif]-->
   </head>
   <body>
-  	<pre>
+<!--
 <?php
 
   if ($_POST['name'] != '' && file_exists('no')) {
@@ -140,10 +140,17 @@
 
 
   } else {
-    echo "錯誤，請重試。或上 FB 專頁詢問。";
+    $error = 1;
   }
 
 ?>
-	</pre>
+-->
+<?php
+if ($error == 1) {
+  echo "錯誤，請重試。或上 FB 專頁詢問。";
+} else {
+  echo "成功，請進信箱收垃圾信。"
+}
+?>
   </body>
 </html>
