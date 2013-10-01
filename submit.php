@@ -88,6 +88,8 @@
       $_POST['recipient-dorm'] = "不知道";
     $message = $message."<tr><td><b>住在　</b></td><td>".$_POST['recipient-dorm']."</td></tr>";
 
+    $message = $message."<tr><td><b>噢對，這樣總共是　</b></td><td>NT$".$money."</td></tr>";
+
     $message = $message.'</table>';
     if($_POST['message'] != '')
       $message = $message."<p>您想對他／她說：".$_POST['message']."</p>";
