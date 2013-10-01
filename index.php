@@ -611,6 +611,8 @@
         }
       }
 
+      var sent = 0;
+
       function validate_form() {
         if (validate_required('#name', '.group-name') == false){
           $('#form-tab a[href="#form-you"]').tab('show');
@@ -648,15 +650,13 @@
           return false;
         }
 
-        if (window.document.readyState != null && window.document.readyState != 'complete') {
-          if (window.document.readyState == 'interactive'){
-            return true;
-          } else {
-            alert("處理中，請稍候！");
-            return false;
-          }
+        if (sent == 1) {
+          alert("處理中，請稍候！");
+          return false;
         }
 
+        sent = 1;
+        return true;
 
       }
 
@@ -702,7 +702,7 @@
           $('#bill').addClass('fix-bottom');
         else
           $('#bill').removeClass('fix-bottom');
-        console.log(($('#bill').offset().top + $('#bill').height() ) - ($(window).scrollTop() + $(window).height()));
+
       });
 
 
