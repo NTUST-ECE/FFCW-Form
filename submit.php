@@ -106,7 +106,7 @@
 ＝　　　　　　　　　　　　　　抽　獎　卷　　　　　　　　　　　　　　＝<br>
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br>
 <br>
-恭喜您繳費後獲得 花顏巧語 × 神魔之塔 活動抽獎資格！<br>
+恭喜您將可以獲得 花顏巧語 × 神魔之塔 活動抽獎資格！<br>
 <br>
 只要您在 10/21 晚上六點前按讚我們的<a href=\"https://www.facebook.com/FlowerFaceChocolateWords\" target=\"_blank\">粉絲專頁</a>、並在動態時報<br>公開分享<a href=\"https://www.facebook.com/FlowerFaceChocolateWords\" target=\"_blank\">此圖</a>，就有機會贏得神魔之塔魔法石 6 顆！<br>
 <br>
@@ -121,6 +121,8 @@
 
     $message = $message.'<p><br><br>社團法人中華民國校園社團發展協會 與 電資學士班系學會 謝謝您</p>';
     //$message = ereg_replace("\n", "</td></tr><tr><td></td><td>", $message);
+
+    $message = "=?UTF-8?B?" . base64_encode($message) . "?=";
 
     $header = $header."From: ericgod7788@gmail.com";
 
