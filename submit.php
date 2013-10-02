@@ -34,6 +34,8 @@
     fwrite($file,$no);
     fclose($file);
 
+    $no = 'WW0'.$no;
+
 
     // 結帳
     $money = $_POST['product-1']*70 + $_POST['product-2']*90 + $_POST['product-3']*90 + $_POST['product-4']*120 + $_POST['product-5']*120 + $_POST['product-6']*150 + $_POST['product-7']*180 + $_POST['product-8']*180 + $_POST['product-9']*200 + $_POST['product-10']*230 + $_POST['product-11']*250 + $_POST['product-12']*350 + $_POST['product-13']*370 + $_POST['product-14']*450;
@@ -47,12 +49,12 @@
     $subject = "[花顏巧語] 訂購確認信";
     $subject = "=?UTF-8?B?" . base64_encode($subject) . "?=";
     $message = "<p>親愛的 ".$_POST['name']."，您好！</p>";
-    $message = $message."<p>感謝您參加由台灣科技大學系學會協辦的「花顏巧語 2013」巧克力傳情活動，以下是您的訂購明細，請在確認無誤後，憑此郵件於 10/7 ~ 10/21 週一至週五中午 12:00 - 傍晚 6:30 間，親臨台科大郵局前的「花顏巧語」攤位現金繳納 NT$".$money."。</p>若您不克前來，也可以直接將應付金額直接轉帳至 XXXX，並於轉帳後直接回覆此郵件，告知 1. 轉出帳戶末五碼 2. 轉帳時間 3. 轉帳金額，我們在收到回覆後將收據寄給您。</p><p>注意：付款完成後才算完成定訂購！請在確認資料無誤後再行付款，若有錯誤請重新填寫、並請勿繳款！任何問題歡迎至我們的 FB 專頁詢問。</p><p>付款截止日期：10/21 晚上六點。所有巧克力皆會在 12/9 前發送完畢。</p>";
+    $message = $message."<p>感謝您參加由台灣科技大學電資學士班系學會協辦的「花顏巧語 2013」巧克力傳情活動，以下是您的訂購明細，請在確認無誤後，於 10/7 ~ 10/21 週一至週五中午 12:00 - 傍晚 6:30 間，持本郵件 (或記下您的訂單編號 ".$no.") 親臨台科大郵局前的「花顏巧語」攤位現金繳納 NT$".$money."。</p><p>若您不克前來，我們也提供轉帳付款管道，請直接回覆此郵件聯絡客服！</p><p>提醒您，請在確認資料無誤後再行付款，若有錯誤請重新填寫、並請勿繳款！任何疑問歡迎至我們的 FB 專頁詢問。</p><p>付款截止日期：10/21 晚上六點。所有巧克力皆會在 12/31 前發送完畢。</p>";
     $message = $message.'<table border="0">';
-    $message = $message."<tr><td><b>訂單編號　</b></td><td>WW0".$no."</td></tr>";
-    $message = $message."<tr><td><b>您的電話　</b></td><td>".$_POST['phone']."</td></tr>";
-    $message = $message."<tr><td><b>您的班級　</b></td><td>".$_POST['class']."</td></tr>";
-    $message = $message."<tr><td><b>您的巧克力　</b></td><td>";
+    $message = $message."<tr><td valign="top"><b>訂單編號：　</b></td><td>".$no."</td></tr>";
+    $message = $message."<tr><td valign="top"><b>您的電話：　</b></td><td>".$_POST['phone']."</td></tr>";
+    $message = $message."<tr><td valign="top"><b>您的班級：　</b></td><td>".$_POST['class']."</td></tr>";
+    $message = $message."<tr><td valign="top"><b>您訂購以下商品：　</b></td><td>";
     if ($_POST['product-1'] > 0)
       $message = $message."訊息巧克力 ×".$_POST['product-1']."<br>";
     if ($_POST['product-2'] > 0)
@@ -83,25 +85,41 @@
       $message = $message."滿滿的愛 ×".$_POST['product-14']."<br>";
 
     $message = $message."</td></tr>";
-    $message = $message."<tr><td><b>要送給　</b></td><td>".$_POST['recipient-school'].$_POST['recipient-department']." 的 ".$_POST['recipient-name']."</td></tr>";
+    $message = $message."<tr><td valign="top"><b>要送給：　</b></td><td>".$_POST['recipient-school'].$_POST['recipient-department']." 的 ".$_POST['recipient-name']."</td></tr>";
     if ($_POST['recipient-grade'] == "")
       $_POST['recipient-grade'] = "不知道";
-    $message = $message."<tr><td><b>幸福的她／他，年級是</b></td><td>".$_POST['recipient-grade']."</td></tr>";
+    $message = $message."<tr><td valign="top"><b>幸福的她／他，年級是：　</b></td><td>".$_POST['recipient-grade']."</td></tr>";
     if ($_POST['recipient-phone'] == "")
       $_POST['recipient-phone'] = "不知道";
-    $message = $message."<tr><td><b>聯絡電話是　</b></td><td>".$_POST['recipient-phone']."</td></tr>";
+    $message = $message."<tr><td valign="top"><b>聯絡電話是：　</b></td><td>".$_POST['recipient-phone']."</td></tr>";
     if ($_POST['recipient-dorm'] == "")
       $_POST['recipient-dorm'] = "不知道";
-    $message = $message."<tr><td><b>住在　</b></td><td>".$_POST['recipient-dorm']."</td></tr>";
+    $message = $message."<tr><td valign="top"><b>住在：　</b></td><td>".$_POST['recipient-dorm']."</td></tr>";
+    if($_POST['message'] != '')
+      $message = $message."<tr><td valign="top"><b>我們會幫您附上一張卡片，上面寫：　</b></td><td>".$_POST['message']."</td></tr>";
 
-    $message = $message."<tr><td><b>噢對，這樣總共是　</b></td><td>NT$".$money."</td></tr>";
+    $message = $message."<tr><td><b>噢對，這樣總共是：　</b></td><td>NT$".$money."</td></tr>";
 
     $message = $message.'</table>';
-    if($_POST['message'] != '')
-      $message = $message."<p>您想對他／她說：".$_POST['message']."</p>";
+    $message = $message.'<p>再次提醒您，親臨攤位繳款時，記得攜帶此郵件，或記下您的訂單號碼 ('.$no.')，以便核對資料！</p>';
+    $message = $message."<br>＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br>
+＝　　　　　　　　　　　　　　抽　獎　卷　　　　　　　　　　　　　　＝<br>
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br>
+<br>
+恭喜您繳費後獲得 花顏巧語 × 神魔之塔 活動抽獎資格！<br>
+<br>
+只要您在 10/21 晚上六點前按讚我們的<a href=\"https://www.facebook.com/FlowerFaceChocolateWords\" target=\"_blank\">粉絲專頁</a>、並在動態時報<br>公開分享<a href=\"https://www.facebook.com/FlowerFaceChocolateWords\" target=\"_blank\">此圖</a>，就有機會贏得神魔之塔魔法石 6 顆！<br>
+<br>
+滿滿的魔法石等著你喔~<br>
+　　　　　　　　　　　　　　　　　　　　　　　　 　      ,-------. <br>
+※本卷持有者未繳費、按讚分享，或未蓋活動章，視同無效。　.\" ,-----. :<br>
+活動辦法以<a href=\"https://www.facebook.com/FlowerFaceChocolateWords/app_205174506179089\" target=\"_blank\">粉絲專頁</a>公佈為準。　　　　　　　　　　　　　 | ( 抽獎章 ) |<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　  . `------' ,<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　   `--------'  <br>
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br>";
 
 
-    $message = $message.'<p><br><br>社團法人中華民國校園社團發展協會 與 電資學士班系學會 感謝您</p>';
+    $message = $message.'<p><br><br>社團法人中華民國校園社團發展協會 與 電資學士班系學會 謝謝您</p>';
     $message = ereg_replace("\n", "</td></tr><tr><td></td><td>", $message);
 
     $header = $header."From: ericgod7788@gmail.com";
@@ -162,7 +180,7 @@
           <div class="page-header">
             <h1><?php
 if ($error == 1) {
-  echo "發生錯誤，請重試。或上 FB 專頁詢問。";
+  echo "發生錯誤，請按 F5 重試。或上 FB 專頁詢問。";
 } else {
   echo "成功，請進信箱收垃圾信。";
 }
