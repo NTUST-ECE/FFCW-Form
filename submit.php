@@ -45,7 +45,7 @@
       $money += 40;
 
     // 準備 email
-    $header = "Content-type: text/html; charset=UTF-8\n";
+    $header = "Content-type: text/html; charset=big5\r\n";
     $subject = "[花顏巧語] 訂購確認信";
     $subject = "=?UTF-8?B?" . base64_encode($subject) . "?=";
     $message = "親愛的 ".$_POST['name']."，您好！";
