@@ -45,7 +45,7 @@
       $money += 40;
 
     // 準備 email
-    $header = "Content-type: text/html; charset=iso-8859-1\r\n";
+    $header = "Content-type: text/html; charset=UTF-8\n";
     $subject = "[花顏巧語] 訂購確認信";
     $subject = "=?UTF-8?B?" . base64_encode($subject) . "?=";
     $message = "親愛的 ".$_POST['name']."，您好！";
@@ -104,7 +104,7 @@
     $message = $message."<tr><td><b>噢對，這樣總共是：　</b></td><td>NT$".$money."</td></tr>";
 
     $message = $message.'</table>';
-    $message = $message.'<p>再次提醒您，親臨攤位繳款時，記得攜帶此郵件，或記下您的訂單號碼 ('.$no.')，以便核對資料！</p>';
+    $message = $message.'<p>！再次提醒您，親臨攤位繳款時，記得攜帶此郵件，或記下您的訂單號碼 ('.$no.')，以便核對資料！</p>';
     $message = $message."<br>＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br>
 ＝　　　　　　　　　　　　　　抽　獎　卷　　　　　　　　　　　　　　＝<br>
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br>
