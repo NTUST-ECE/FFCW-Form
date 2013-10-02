@@ -121,7 +121,7 @@
 <br>
 恭喜您將可以獲得 花顏巧語 × 神魔之塔 活動抽獎資格！<br>
 <br>
-只要您在 10/21 晚上六點前按讚我們的<a href=\"https://www.facebook.com/FlowerFaceChocolateWords\" target=\"_blank\">粉絲專頁</a>、並在動態時報<br>公開分享<a href=\"https://www.facebook.com/FlowerFaceChocolateWords\" target=\"_blank\">此圖</a>，就有機會贏得神魔之塔魔法石 6 顆！<br>
+只要您在 10/21 晚上六點前按讚我們的<a href=\"https://www.facebook.com/FlowerFaceChocolateWords\" target=\"_blank\">粉絲專頁</a>、並在動態時報<br>公開分享<a href=\"https://www.facebook.com/photo.php?fbid=571056289596395&set=a.570693362966021.1073741829.569792513056106\" target=\"_blank\">此圖</a>，就有機會贏得神魔之塔魔法石 6 顆！<br>
 <br>
 滿滿的魔法石等著你喔~<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ,-------.  <br>
