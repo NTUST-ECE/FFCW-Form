@@ -95,8 +95,11 @@
     if ($_POST['recipient-dorm'] == "")
       $_POST['recipient-dorm'] = "不知道";
     $message = $message."<tr><td valign=\"top\"><b>住在：　</b></td><td>".$_POST['recipient-dorm']."</td></tr>";
-    if($_POST['message'] != '')
-      $message = $message."<tr><td valign=\"top\"><b>我們會幫您附上一張卡片，上面寫：　</b></td><td>".$_POST['message']."</td></tr>";
+    if($_POST['message'] != '') {
+      $t = ereg_replace("\n", "<br>", $_POST['message']);
+      $message = $message."<tr><td valign=\"top\"><b>我們會幫您附上一張卡片，上面寫：　</b></td><td>".$t."</td></tr>";
+    }
+
 
     $message = $message."<tr><td><b>噢對，這樣總共是：　</b></td><td>NT$".$money."</td></tr>";
 
@@ -185,8 +188,9 @@ if ($error == 1) {
   echo "成功，請進信箱收垃圾信。";
 }
             ?></h1>
-            <p>訂單編號：<?php echo $no ?></p>
           </div>
+          <p>訂單編號：<?php echo $no ?></p>
+          <p><?php echo $_POST['email'] ?></p>
 
       </div>
     </div>
