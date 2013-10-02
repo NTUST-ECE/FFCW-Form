@@ -598,7 +598,7 @@
                     <div class="caption description">
                       <h3>13. 我的祝福</h3>
                       <p><b>內容：</b><br>法國有機松露巧克力 (6入/60g)</p>
-                      <p><b>包裝：</b><br>14.5×9×3.5㎝ 方形紙盒+蝴蝶緞帶</p>
+                      <p><b>包裝：</b><br>14.5×9×3.5㎝ 方形紙盒 + 蝴蝶緞帶</p>
                     </div>
                     <div class="caption">
                       <p>NT$370</p>
@@ -656,7 +656,7 @@
               </div></div>
 
               <hr>
-              <h2>免費卡片</h2>
+              <h2>免費卡片代送服務</h2>
               <p>我要送卡片，請幫我代寫：(<input style="border: none; text-align: right; width: 18px;" readonly type="text" name="messagecount" size="3" value="80">/80 字內)</p>
               <textarea name="message" class="form-control message" rows="5" onKeyDown="limitText(this.form.message, this.form.messagecount, 80);" onKeyUp="limitText(this.form.message, this.form.messagecount, 50);"></textarea>
               <p>您也可以在親臨攤位繳費時，將親手寫的卡片交給我們！</p>
