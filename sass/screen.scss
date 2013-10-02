@@ -138,6 +138,10 @@ h2 + .form-group {
 
 	.nav-tabs {
 		padding-bottom: 12px;
+
+		> li > a, > li > div {
+			padding: 6px 10px !important;
+		}
 	}
 
 	.nav-tabs > li > a, .nav-tabs > li > a:hover {
@@ -154,6 +158,15 @@ h2 + .form-group {
 	.nav-tabs > li > div {
 		padding-left: 12px !important;
 		padding-right: 12px !important;
+	}
+
+	input.form-control {
+		height: auto;
+		font-size: 18px;
+	}
+
+	.product-amount {
+		font-size: 18px;
 	}
 
 	.thumbnail {

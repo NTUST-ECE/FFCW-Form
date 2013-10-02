@@ -143,31 +143,46 @@ h2 + .form-group {
   .nav-tabs {
     padding-bottom: 12px;
   }
+  /* line 142, ../sass/screen.scss */
+  .nav-tabs > li > a, .nav-tabs > li > div {
+    padding: 6px 10px !important;
+  }
 
-  /* line 143, ../sass/screen.scss */
+  /* line 147, ../sass/screen.scss */
   .nav-tabs > li > a, .nav-tabs > li > a:hover {
     border-radius: 0;
     border: 1px solid #ddd;
     margin-bottom: 4px;
   }
 
-  /* line 149, ../sass/screen.scss */
+  /* line 153, ../sass/screen.scss */
   .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
     border: 1px solid #ccc;
     background-color: #eee;
   }
 
-  /* line 154, ../sass/screen.scss */
+  /* line 158, ../sass/screen.scss */
   .nav-tabs > li > div {
     padding-left: 12px !important;
     padding-right: 12px !important;
   }
 
-  /* line 159, ../sass/screen.scss */
+  /* line 163, ../sass/screen.scss */
+  input.form-control {
+    height: auto;
+    font-size: 18px;
+  }
+
+  /* line 168, ../sass/screen.scss */
+  .product-amount {
+    font-size: 18px;
+  }
+
+  /* line 172, ../sass/screen.scss */
   .thumbnail {
     margin-bottom: 12px;
   }
-  /* line 162, ../sass/screen.scss */
+  /* line 175, ../sass/screen.scss */
   .thumbnail .description {
     height: auto;
   }
@@ -175,26 +190,26 @@ h2 + .form-group {
 /* Customize style
 -------------------------------------------------- */
 @media all and (min-width: 979px) {
-  /* line 177, ../sass/screen.scss */
+  /* line 190, ../sass/screen.scss */
   .nav-tabs > li > a {
     color: #aaa;
   }
 
-  /* line 183, ../sass/screen.scss */
+  /* line 196, ../sass/screen.scss */
   .form-horizontal .form-group {
     margin-bottom: 30px;
   }
-  /* line 187, ../sass/screen.scss */
+  /* line 200, ../sass/screen.scss */
   .form-horizontal p {
     margin-bottom: 20px;
   }
 
-  /* line 193, ../sass/screen.scss */
+  /* line 206, ../sass/screen.scss */
   .form-control, .btn-lg {
     border-radius: 0;
   }
 
-  /* line 197, ../sass/screen.scss */
+  /* line 210, ../sass/screen.scss */
   .form-control {
     box-shadow: none !important;
     border: 0px;
@@ -202,7 +217,7 @@ h2 + .form-group {
     padding: 6px 8px;
   }
 
-  /* line 204, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   input.form-control {
     height: 50px;
     font-size: 27px;
@@ -212,58 +227,58 @@ h2 + .form-group {
     overflow: visible;
   }
 
-  /* line 213, ../sass/screen.scss */
+  /* line 226, ../sass/screen.scss */
   .form-control:focus {
     background-color: #fafafa;
     border-bottom: 2px solid #000;
   }
 
-  /* line 218, ../sass/screen.scss */
+  /* line 231, ../sass/screen.scss */
   textarea {
     border: 1px solid #777 !important;
   }
 
-  /* line 222, ../sass/screen.scss */
+  /* line 235, ../sass/screen.scss */
   .form-control:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
   }
 
-  /* line 227, ../sass/screen.scss */
+  /* line 240, ../sass/screen.scss */
   .col-lg-4.control-label {
     padding-top: 20px;
     margin-right: -18px;
     font-size: 16px;
   }
 
-  /* line 233, ../sass/screen.scss */
+  /* line 246, ../sass/screen.scss */
   .col-lg-4.control-label:after {
     content: "：";
   }
 
-  /* line 237, ../sass/screen.scss */
+  /* line 250, ../sass/screen.scss */
   .select2-container {
     padding-top: 14px;
   }
 
-  /* line 241, ../sass/screen.scss */
+  /* line 254, ../sass/screen.scss */
   .product-amount {
     border: 1px solid #aaa;
   }
 
-  /* line 245, ../sass/screen.scss */
+  /* line 258, ../sass/screen.scss */
   .product-amount:focus {
     border: 2px solid #d88;
   }
 
-  /* line 249, ../sass/screen.scss */
+  /* line 262, ../sass/screen.scss */
   .thumbnail {
     border-radius: 0;
     background-color: #fbfbfb;
     max-width: 610px;
   }
 
-  /* line 256, ../sass/screen.scss */
+  /* line 269, ../sass/screen.scss */
   .label {
     border-radius: 0px;
   }
