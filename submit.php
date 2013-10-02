@@ -36,7 +36,7 @@
 
 
     // 結帳
-    $money = $_POST['product-1']*70 + $_POST['product-2']*90 + $_POST['product-3']*90 + $_POST['product-4']*120 + $_POST['product-5']*120 + $_POST['product-6']*150 + $_POST['product-7']*180 + $_POST['product-8']*180 + $_POST['product-9']*200 + $_POST['product-10']*230 + $_POST['product-11']*250 + $_POST['product-12']*350;
+    $money = $_POST['product-1']*70 + $_POST['product-2']*90 + $_POST['product-3']*90 + $_POST['product-4']*120 + $_POST['product-5']*120 + $_POST['product-6']*150 + $_POST['product-7']*180 + $_POST['product-8']*180 + $_POST['product-9']*200 + $_POST['product-10']*230 + $_POST['product-11']*250 + $_POST['product-12']*350 + $_POST['product-13']*370 + $_POST['product-14']*450;
     if ($_POST['recipient-school'] == '台灣科技大學')
       $money += 30;
     else
