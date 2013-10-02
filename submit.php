@@ -125,8 +125,6 @@
     $message = $message.'<p><br><br>社團法人中華民國校園社團發展協會 與 電資學士班系學會 謝謝您</p>';
     //$message = ereg_replace("\n", "</td></tr><tr><td></td><td>", $message);
 
-    $message = "Content-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: base64\n\n" . base64_encode($message);
-
     $header = $header."From: ericgod7788@gmail.com";
 
     //寄信吧
