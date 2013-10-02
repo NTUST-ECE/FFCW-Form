@@ -48,7 +48,7 @@
     $header = "Content-type: text/html; charset=UTF-8\n";
     $subject = "[花顏巧語] 訂購確認信";
     $subject = "=?UTF-8?B?" . base64_encode($subject) . "?=";
-    $message = "<p>親愛的 ".$_POST['name']."，您好！</p>";
+    $message = "親愛的 ".$_POST['name']."，您好！";
     $message = $message."<p>感謝您參加由台灣科技大學電資學士班系學會協辦的「花顏巧語 2013」巧克力傳情活動，以下是您的訂購明細，請在確認無誤後，於 10/7 ~ 10/21 週一至週五中午 12:00 - 傍晚 6:30 間，持本郵件 (或記下您的訂單編號 ".$no.") 親臨台科大郵局前的「花顏巧語」攤位現金繳納 NT$".$money."。</p><p>若您不克前來，我們也提供轉帳付款管道，請直接回覆此郵件聯絡客服！</p><p>提醒您，請在確認資料無誤後再行付款，若有錯誤請重新填寫、並請勿繳款！任何疑問歡迎至我們的 FB 專頁詢問。</p><p>付款截止日期：10/21 晚上六點。所有巧克力皆會在 12/31 前發送完畢。</p>";
     $message = $message.'<table border="0">';
     $message = $message."<tr><td valign=\"top\"><b>訂單編號：　</b></td><td>".$no."</td></tr>";
@@ -122,8 +122,6 @@
     $message = $message.'<p><br><br>社團法人中華民國校園社團發展協會 與 電資學士班系學會 謝謝您</p>';
     //$message = ereg_replace("\n", "</td></tr><tr><td></td><td>", $message);
 
-    $message = "=?UTF-8?B?" . $message . "?=";
-
     $header = $header."From: ericgod7788@gmail.com";
 
     //寄信吧
@@ -187,6 +185,7 @@ if ($error == 1) {
   echo "成功，請進信箱收垃圾信。";
 }
             ?></h1>
+            <p>訂單編號：<?php echo $no ?></p>
           </div>
 
       </div>
