@@ -77,6 +77,10 @@
       $message = $message."甜心熊禮盒 ×".$_POST['product-11']."<br>";
     if ($_POST['product-12'] > 0)
       $message = $message."草莓守護熊 ×".$_POST['product-12']."<br>";
+    if ($_POST['product-12'] > 0)
+      $message = $message."我的祝福 ×".$_POST['product-13']."<br>";
+    if ($_POST['product-12'] > 0)
+      $message = $message."滿滿的愛 ×".$_POST['product-14']."<br>";
 
     $message = $message."</td></tr>";
     $message = $message."<tr><td><b>要送給　</b></td><td>".$_POST['recipient-school'].$_POST['recipient-department']." 的 ".$_POST['recipient-name']."</td></tr>";
@@ -136,6 +140,8 @@
       "entry.1067708279" => $_POST['product-10'],
       "entry.1590256053" => $_POST['product-11'],
       "entry.256800263" => $_POST['product-12'],
+      "entry.1046620618" => $_POST['product-13'],
+      "entry.1436218940" => $_POST['product-14'],
       "entry.356257608" => $_POST['message'],
       "entry.957291139" => $money
       ) ));

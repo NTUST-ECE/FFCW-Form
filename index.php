@@ -592,6 +592,62 @@
                     </div>
                   </div>
                 </div>
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <img src="img/13.jpg" alt="">
+                    <div class="caption description">
+                      <h3>13. 我的祝福</h3>
+                      <p><b>內容：</b><br>法國有機松露巧克力 (6入/60g)</p>
+                      <p><b>包裝：</b><br>14.5×9×3.5㎝ 方形紙盒+蝴蝶緞帶</p>
+                    </div>
+                    <div class="caption">
+                      <p>NT$370</p>
+                      <p>數量：
+                        <select name="product-13" id="product-13" class="form-control product-amount">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+
+                        </select>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <img src="img/14.jpg" alt="">
+                    <div class="caption description">
+                      <h3>14. 滿滿的愛</h3>
+                      <p><b>內容：</b><br>比利時夾心巧克力 (8入/120g)</p>
+                      <p><b>包裝：</b><br>16×14×3.5㎝ 心形紙盒 + 蝴蝶緞帶</p>
+                    </div>
+                    <div class="caption">
+                      <p>NT$450</p>
+                      <p>數量：
+                        <select name="product-14" id="product-14" class="form-control product-amount">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+
+                        </select>
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div id="bill-container"><div id="bill" class="fix-bottom">
@@ -770,13 +826,17 @@
           product_total_message = product_total_message + " + 甜心熊禮盒 $250×" + $("#product-11").val();
         if ($("#product-12").val() > 0)
           product_total_message = product_total_message + " + 草莓守護熊 $350×" + $("#product-12").val();
+        if ($("#product-13").val() > 0)
+          product_total_message = product_total_message + " + 我的祝福 $370×" + $("#product-13").val();
+        if ($("#product-14").val() > 0)
+          product_total_message = product_total_message + " + 滿滿的愛 $450×" + $("#product-14").val();
 
 
         $(".product-total-message").text(product_total_message);
 
 
 
-        return $("#product-1").val()*70 + $("#product-2").val()*90 + $("#product-3").val()*90 + $("#product-4").val()*120 + $("#product-5").val()*120 + $("#product-6").val()*150 + $("#product-7").val()*180 + $("#product-8").val()*180 + $("#product-9").val()*200 + $("#product-10").val()*230 + $("#product-11").val()*250 + $("#product-12").val()*350;
+        return $("#product-1").val()*70 + $("#product-2").val()*90 + $("#product-3").val()*90 + $("#product-4").val()*120 + $("#product-5").val()*120 + $("#product-6").val()*150 + $("#product-7").val()*180 + $("#product-8").val()*180 + $("#product-9").val()*200 + $("#product-10").val()*230 + $("#product-11").val()*250 + $("#product-12").val()*350 + $("#product-13").val()*370 + $("#product-14").val()*450;
       }
 
       function cashier() {
