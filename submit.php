@@ -51,10 +51,10 @@
     $message = "<p>親愛的 ".$_POST['name']."，您好！</p>";
     $message = $message."<p>感謝您參加由台灣科技大學電資學士班系學會協辦的「花顏巧語 2013」巧克力傳情活動，以下是您的訂購明細，請在確認無誤後，於 10/7 ~ 10/21 週一至週五中午 12:00 - 傍晚 6:30 間，持本郵件 (或記下您的訂單編號 ".$no.") 親臨台科大郵局前的「花顏巧語」攤位現金繳納 NT$".$money."。</p><p>若您不克前來，我們也提供轉帳付款管道，請直接回覆此郵件聯絡客服！</p><p>提醒您，請在確認資料無誤後再行付款，若有錯誤請重新填寫、並請勿繳款！任何疑問歡迎至我們的 FB 專頁詢問。</p><p>付款截止日期：10/21 晚上六點。所有巧克力皆會在 12/31 前發送完畢。</p>";
     $message = $message.'<table border="0">';
-    $message = $message."<tr><td valign="top"><b>訂單編號：　</b></td><td>".$no."</td></tr>";
-    $message = $message."<tr><td valign="top"><b>您的電話：　</b></td><td>".$_POST['phone']."</td></tr>";
-    $message = $message."<tr><td valign="top"><b>您的班級：　</b></td><td>".$_POST['class']."</td></tr>";
-    $message = $message."<tr><td valign="top"><b>您訂購以下商品：　</b></td><td>";
+    $message = $message."<tr><td valign=\"top\"><b>訂單編號：　</b></td><td>".$no."</td></tr>";
+    $message = $message."<tr><td valign=\"top\"><b>您的電話：　</b></td><td>".$_POST['phone']."</td></tr>";
+    $message = $message."<tr><td valign=\"top\"><b>您的班級：　</b></td><td>".$_POST['class']."</td></tr>";
+    $message = $message."<tr><td valign=\"top\"><b>您訂購以下商品：　</b></td><td>";
     if ($_POST['product-1'] > 0)
       $message = $message."訊息巧克力 ×".$_POST['product-1']."<br>";
     if ($_POST['product-2'] > 0)
@@ -85,18 +85,18 @@
       $message = $message."滿滿的愛 ×".$_POST['product-14']."<br>";
 
     $message = $message."</td></tr>";
-    $message = $message."<tr><td valign="top"><b>要送給：　</b></td><td>".$_POST['recipient-school'].$_POST['recipient-department']." 的 ".$_POST['recipient-name']."</td></tr>";
+    $message = $message."<tr><td valign=\"top\"><b>要送給：　</b></td><td>".$_POST['recipient-school'].$_POST['recipient-department']." 的 ".$_POST['recipient-name']."</td></tr>";
     if ($_POST['recipient-grade'] == "")
       $_POST['recipient-grade'] = "不知道";
-    $message = $message."<tr><td valign="top"><b>幸福的她／他，年級是：　</b></td><td>".$_POST['recipient-grade']."</td></tr>";
+    $message = $message."<tr><td valign=\"top\"><b>幸福的她／他，年級是：　</b></td><td>".$_POST['recipient-grade']."</td></tr>";
     if ($_POST['recipient-phone'] == "")
       $_POST['recipient-phone'] = "不知道";
-    $message = $message."<tr><td valign="top"><b>聯絡電話是：　</b></td><td>".$_POST['recipient-phone']."</td></tr>";
+    $message = $message."<tr><td valign=\"top\"><b>聯絡電話是：　</b></td><td>".$_POST['recipient-phone']."</td></tr>";
     if ($_POST['recipient-dorm'] == "")
       $_POST['recipient-dorm'] = "不知道";
-    $message = $message."<tr><td valign="top"><b>住在：　</b></td><td>".$_POST['recipient-dorm']."</td></tr>";
+    $message = $message."<tr><td valign=\"top\"><b>住在：　</b></td><td>".$_POST['recipient-dorm']."</td></tr>";
     if($_POST['message'] != '')
-      $message = $message."<tr><td valign="top"><b>我們會幫您附上一張卡片，上面寫：　</b></td><td>".$_POST['message']."</td></tr>";
+      $message = $message."<tr><td valign=\"top\"><b>我們會幫您附上一張卡片，上面寫：　</b></td><td>".$_POST['message']."</td></tr>";
 
     $message = $message."<tr><td><b>噢對，這樣總共是：　</b></td><td>NT$".$money."</td></tr>";
 
