@@ -658,7 +658,7 @@
               <hr>
               <h2>免費卡片代送服務</h2>
               <p>請幫我代寫：(<input style="border: none; text-align: right; width: 18px;" readonly type="text" name="messagecount" size="3" value="80">/80 字內)</p>
-              <textarea name="message" class="form-control message" rows="5" onKeyDown="limitText(this.form.message, this.form.messagecount, 80);" onKeyUp="limitText(this.form.message, this.form.messagecount, 50);" placeholder="若無須代寫，此欄請留空。"></textarea>
+              <textarea name="message" class="form-control message" rows="5" onKeyDown="limitText(this.form.message, this.form.messagecount, 80);" onKeyUp="limitText(this.form.message, this.form.messagecount, 80);" placeholder="若無須代寫，此欄請留空。"></textarea>
               <p>您也可以在親臨攤位繳費時，將親手寫的卡片交給我們！</p>
 
               <hr>
