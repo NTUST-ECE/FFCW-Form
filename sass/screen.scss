@@ -44,11 +44,6 @@ html, body {
 /* Customize layout
 -------------------------------------------------- */
 
-body {
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-
 select {
 	height: 34px;
 }
@@ -100,8 +95,10 @@ h2 + .form-group {
 	left: 0;
 	width: 100% !important;
 
-	* {
-		max-width: 650px;
+	> * {
+		max-width: 680px;
+		padding-left: 15px;
+		padding-right: 15px;
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -133,7 +130,11 @@ h2 + .form-group {
 
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
+
+	.hidden-phone {
+		display: none;
+	}
 
 	.nav-tabs {
 		padding-bottom: 12px;
@@ -141,11 +142,12 @@ h2 + .form-group {
 
 	.nav-tabs > li > a, .nav-tabs > li > a:hover {
 		border-radius: 0;
-		border: none;
+		border: 1px solid #ddd;
 	}
 
-	.nav-tabs > li.active > a {
-		border: 1px solid #ddd;
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
+		border: 1px solid #ccc;
+		background-color: #eee;
 	}
 
 	.nav-tabs > li > div {
@@ -167,85 +169,91 @@ h2 + .form-group {
 /* Customize style
 -------------------------------------------------- */
 
-.nav-tabs > li > a {
-	color: #aaa;
-}
 
-.form-horizontal {
+@media all and (min-width: 979px) {
 
-	.form-group {
-		margin-bottom: 30px;
+
+	.nav-tabs > li > a {
+		color: #aaa;
 	}
 
-	p {
-		margin-bottom: 20px;
+	.form-horizontal {
+
+		.form-group {
+			margin-bottom: 30px;
+		}
+
+		p {
+			margin-bottom: 20px;
+		}
+
 	}
 
-}
+	.form-control, .btn-lg {
+		border-radius: 0;
+	}
 
-.form-control, .btn-lg {
-	border-radius: 0;
-}
+	.form-control {
+		box-shadow: none !important;
+		border: 0px;
+		border-bottom: 1px solid #777;
+		padding: 6px 8px;
+	}
 
-.form-control {
-	box-shadow: none !important;
-	border: 0px;
-	border-bottom: 1px solid #777;
-	padding: 6px 8px;
-}
+	input.form-control {
+		height: 50px;
+		font-size: 27px;
+		font-family: 'Reenie Beanie', cursive;
+		padding-top: 10px;
+		padding-bottom: 0px;
+		overflow: visible;
+	}
 
-input.form-control {
-	height: 50px;
-	font-size: 27px;
-	font-family: 'Reenie Beanie', cursive;
-	padding-top: 10px;
-	padding-bottom: 0px;
-	overflow: visible;
-}
+	.form-control:focus {
+		background-color: #fafafa;
+		border-bottom: 2px solid #000;
+	}
 
-.form-control:focus {
-	background-color: #fafafa;
-	border-bottom: 2px solid #000;
-}
+	textarea {
+		border: 1px solid #777 !important;
+	}
 
-textarea {
-	border: 1px solid #777 !important;
-}
+	.form-control:focus {
+		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
+	}
 
-.form-control:focus {
-	-webkit-box-shadow: none !important;
-	box-shadow: none !important;
-}
+	.col-lg-4.control-label {
+		padding-top: 20px;
+		margin-right: -18px;
+		font-size: 16px;
+	}
 
-.col-lg-4.control-label {
-	padding-top: 20px;
-	margin-right: -18px;
-	font-size: 16px;
-}
+	.col-lg-4.control-label:after {
+		content: "：";
+	}
 
-.col-lg-4.control-label:after {
-	content: "：";
-}
+	.select2-container {
+		padding-top: 14px;
+	}
 
-.select2-container {
-	padding-top: 14px;
-}
+	.product-amount {
+		border: 1px solid #aaa;
+	}
 
-.product-amount {
-	border: 1px solid #aaa;
-}
+	.product-amount:focus {
+		border: 2px solid #d88;
+	}
 
-.product-amount:focus {
-	border: 2px solid #d88;
-}
+	.thumbnail {
+		border-radius: 0;
+		//border: 1px solid darken(#ffe2e6, 10%);
+		background-color: lighten(#eee, 5%);
+		max-width: 610px;
+	}
 
-.thumbnail {
-	border-radius: 0;
-	//border: 1px solid darken(#ffe2e6, 10%);
-	background-color: lighten(#eee, 5%);
-	max-width: 610px;
-}
+	.label {
+		border-radius: 0px;
+	}
 
-.label {
-	border-radius: 0px;
 }

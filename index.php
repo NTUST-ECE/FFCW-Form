@@ -31,11 +31,11 @@
 
         <form role="form" action="submit.php" method="post" onsubmit="return validate_form();">
           <ul class="nav nav-tabs" id="form-tab">
-            <li class="active"><a href="#form-you" data-toggle="tab">STEP I：關於您</a></li>
+            <li class="active"><a href="#form-you" data-toggle="tab"><span class="hidden-phone">STEP I：</span>關於您</a></li>
             <li><div style="display: inline-block; padding: 10px 15px;"> → </div></li>
-            <li><a href="#form-recipient" class="m1" data-toggle="tab">STEP II：關於他／她</a></li>
+            <li><a href="#form-recipient" class="m1" data-toggle="tab"><span class="hidden-phone">STEP II：</span>關於他／她</a></li>
             <li><div style="display: inline-block; padding: 10px 15px;"> → </div></li>
-            <li><a href="#form-product" data-toggle="tab">STEP III：選擇禮物</a></li>
+            <li><a href="#form-product" data-toggle="tab"><span class="hidden-phone">STEP III：</span>選擇禮物</a></li>
           </ul>
 
           <div class="tab-content">
@@ -657,8 +657,8 @@
 
               <hr>
               <h2>免費卡片</h2>
-              <p>我要送卡片，請幫我代寫：(<input style="border: none; text-align: right; width: 18px;" readonly type="text" name="messagecount" size="3" value="50">/50 字內)</p>
-              <textarea name="message" class="form-control message" rows="5" onKeyDown="limitText(this.form.message, this.form.messagecount, 50);" onKeyUp="limitText(this.form.message, this.form.messagecount, 50);"></textarea>
+              <p>我要送卡片，請幫我代寫：(<input style="border: none; text-align: right; width: 18px;" readonly type="text" name="messagecount" size="3" value="80">/80 字內)</p>
+              <textarea name="message" class="form-control message" rows="5" onKeyDown="limitText(this.form.message, this.form.messagecount, 80);" onKeyUp="limitText(this.form.message, this.form.messagecount, 50);"></textarea>
               <p>您也可以在親臨攤位繳費時，將親手寫的卡片交給我們！</p>
 
               <hr>

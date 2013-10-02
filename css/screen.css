@@ -41,32 +41,26 @@ html, body {
 /* Customize layout
 -------------------------------------------------- */
 /* line 47, ../sass/screen.scss */
-body {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-/* line 52, ../sass/screen.scss */
 select {
   height: 34px;
 }
 
-/* line 56, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 iframe {
   max-width: 90%;
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .form-horizontal p {
   margin-top: 10px;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 h2 + .form-group {
   margin-top: 20px;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 .select2-container .select2-choice {
   display: block;
   height: 34px;
@@ -74,21 +68,21 @@ h2 + .form-group {
   padding-bottom: 4px;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .thumbnail {
   margin-bottom: 12px;
 }
-/* line 80, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 .thumbnail .description {
   height: 210px;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 #bill-container {
   margin-top: 20px;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 #bill {
   border-top: 1px solid #ddd;
   display: block;
@@ -97,39 +91,41 @@ h2 + .form-group {
   background-color: white;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .fix-bottom {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100% !important;
 }
-/* line 103, ../sass/screen.scss */
-.fix-bottom * {
-  max-width: 650px;
+/* line 98, ../sass/screen.scss */
+.fix-bottom > * {
+  max-width: 680px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 110, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .displaynone {
   display: none;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .products {
   padding-left: 12px;
   padding-right: 12px;
 }
 
 @media all and (min-width: 979px) {
-  /* line 121, ../sass/screen.scss */
+  /* line 118, ../sass/screen.scss */
   .col-md-4 {
     padding-left: 6px;
     padding-right: 6px;
   }
 
-  /* line 126, ../sass/screen.scss */
+  /* line 123, ../sass/screen.scss */
   .products {
     margin-top: 32px;
     position: relative;
@@ -137,129 +133,137 @@ h2 + .form-group {
     margin-left: -100px;
   }
 }
-@media all and (max-width: 500px) {
-  /* line 138, ../sass/screen.scss */
+@media all and (max-width: 600px) {
+  /* line 135, ../sass/screen.scss */
+  .hidden-phone {
+    display: none;
+  }
+
+  /* line 139, ../sass/screen.scss */
   .nav-tabs {
     padding-bottom: 12px;
   }
 
-  /* line 142, ../sass/screen.scss */
+  /* line 143, ../sass/screen.scss */
   .nav-tabs > li > a, .nav-tabs > li > a:hover {
     border-radius: 0;
-    border: none;
-  }
-
-  /* line 147, ../sass/screen.scss */
-  .nav-tabs > li.active > a {
     border: 1px solid #ddd;
   }
 
-  /* line 151, ../sass/screen.scss */
+  /* line 148, ../sass/screen.scss */
+  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover {
+    border: 1px solid #ccc;
+    background-color: #eee;
+  }
+
+  /* line 153, ../sass/screen.scss */
   .nav-tabs > li > div {
     padding-left: 12px !important;
     padding-right: 12px !important;
   }
 
-  /* line 156, ../sass/screen.scss */
+  /* line 158, ../sass/screen.scss */
   .thumbnail {
     margin-bottom: 12px;
   }
-  /* line 159, ../sass/screen.scss */
+  /* line 161, ../sass/screen.scss */
   .thumbnail .description {
     height: auto;
   }
 }
 /* Customize style
 -------------------------------------------------- */
-/* line 170, ../sass/screen.scss */
-.nav-tabs > li > a {
-  color: #aaa;
-}
+@media all and (min-width: 979px) {
+  /* line 176, ../sass/screen.scss */
+  .nav-tabs > li > a {
+    color: #aaa;
+  }
 
-/* line 176, ../sass/screen.scss */
-.form-horizontal .form-group {
-  margin-bottom: 30px;
-}
-/* line 180, ../sass/screen.scss */
-.form-horizontal p {
-  margin-bottom: 20px;
-}
+  /* line 182, ../sass/screen.scss */
+  .form-horizontal .form-group {
+    margin-bottom: 30px;
+  }
+  /* line 186, ../sass/screen.scss */
+  .form-horizontal p {
+    margin-bottom: 20px;
+  }
 
-/* line 186, ../sass/screen.scss */
-.form-control, .btn-lg {
-  border-radius: 0;
-}
+  /* line 192, ../sass/screen.scss */
+  .form-control, .btn-lg {
+    border-radius: 0;
+  }
 
-/* line 190, ../sass/screen.scss */
-.form-control {
-  box-shadow: none !important;
-  border: 0px;
-  border-bottom: 1px solid #777;
-  padding: 6px 8px;
-}
+  /* line 196, ../sass/screen.scss */
+  .form-control {
+    box-shadow: none !important;
+    border: 0px;
+    border-bottom: 1px solid #777;
+    padding: 6px 8px;
+  }
 
-/* line 197, ../sass/screen.scss */
-input.form-control {
-  height: 50px;
-  font-size: 27px;
-  font-family: 'Reenie Beanie', cursive;
-  padding-top: 10px;
-  padding-bottom: 0px;
-  overflow: visible;
-}
+  /* line 203, ../sass/screen.scss */
+  input.form-control {
+    height: 50px;
+    font-size: 27px;
+    font-family: 'Reenie Beanie', cursive;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    overflow: visible;
+  }
 
-/* line 206, ../sass/screen.scss */
-.form-control:focus {
-  background-color: #fafafa;
-  border-bottom: 2px solid #000;
-}
+  /* line 212, ../sass/screen.scss */
+  .form-control:focus {
+    background-color: #fafafa;
+    border-bottom: 2px solid #000;
+  }
 
-/* line 211, ../sass/screen.scss */
-textarea {
-  border: 1px solid #777 !important;
-}
+  /* line 217, ../sass/screen.scss */
+  textarea {
+    border: 1px solid #777 !important;
+  }
 
-/* line 215, ../sass/screen.scss */
-.form-control:focus {
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
+  /* line 221, ../sass/screen.scss */
+  .form-control:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
 
-/* line 220, ../sass/screen.scss */
-.col-lg-4.control-label {
-  padding-top: 20px;
-  margin-right: -18px;
-  font-size: 16px;
-}
+  /* line 226, ../sass/screen.scss */
+  .col-lg-4.control-label {
+    padding-top: 20px;
+    margin-right: -18px;
+    font-size: 16px;
+  }
 
-/* line 226, ../sass/screen.scss */
-.col-lg-4.control-label:after {
-  content: "：";
-}
+  /* line 232, ../sass/screen.scss */
+  .col-lg-4.control-label:after {
+    content: "：";
+  }
 
-/* line 230, ../sass/screen.scss */
-.select2-container {
-  padding-top: 14px;
-}
+  /* line 236, ../sass/screen.scss */
+  .select2-container {
+    padding-top: 14px;
+  }
 
-/* line 234, ../sass/screen.scss */
-.product-amount {
-  border: 1px solid #aaa;
-}
+  /* line 240, ../sass/screen.scss */
+  .product-amount {
+    border: 1px solid #aaa;
+  }
 
-/* line 238, ../sass/screen.scss */
-.product-amount:focus {
-  border: 2px solid #d88;
-}
+  /* line 244, ../sass/screen.scss */
+  .product-amount:focus {
+    border: 2px solid #d88;
+  }
 
-/* line 242, ../sass/screen.scss */
-.thumbnail {
-  border-radius: 0;
-  background-color: #fbfbfb;
-  max-width: 610px;
-}
+  /* line 248, ../sass/screen.scss */
+  .thumbnail {
+    border-radius: 0;
+    background-color: #fbfbfb;
+    max-width: 610px;
+  }
 
-/* line 249, ../sass/screen.scss */
-.label {
-  border-radius: 0px;
+  /* line 255, ../sass/screen.scss */
+  .label {
+    border-radius: 0px;
+  }
 }
