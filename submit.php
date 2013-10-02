@@ -45,7 +45,7 @@
       $money += 40;
 
     // 準備 email
-    $header = "Content-type: text/html; charset=UTF-8\n";
+    $header = "Content-type: text/html; charset=UTF-8\nMIME-Version: 1.0\nContent-Transfer-Encoding: base64\n";
     $subject = "[花顏巧語] 訂購確認信";
     $subject = "=?UTF-8?B?" . base64_encode($subject) . "?=";
     $message = "親愛的 ".$_POST['name']."，您好！";
@@ -114,16 +114,18 @@
 只要您在 10/21 晚上六點前按讚我們的<a href=\"https://www.facebook.com/FlowerFaceChocolateWords\" target=\"_blank\">粉絲專頁</a>、並在動態時報<br>公開分享<a href=\"https://www.facebook.com/FlowerFaceChocolateWords\" target=\"_blank\">此圖</a>，就有機會贏得神魔之塔魔法石 6 顆！<br>
 <br>
 滿滿的魔法石等著你喔~<br>
-　　　　　　　　　　　　　　　　　　　　　　　　 　      ,-------. <br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ,-------.  <br>
 ※本卷持有者未繳費、按讚分享，或未蓋活動章，視同無效。　.\" ,-----. :<br>
 活動辦法以<a href=\"https://www.facebook.com/FlowerFaceChocolateWords/app_205174506179089\" target=\"_blank\">粉絲專頁</a>公佈為準。　　　　　　　　　　　　　 | ( 抽獎章 ) |<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　  . `------' ,<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　   `--------'  <br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　 . `------' ,<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　 `--------' <br>
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝<br>";
 
 
     $message = $message.'<p><br><br>社團法人中華民國校園社團發展協會 與 電資學士班系學會 謝謝您</p>';
     //$message = ereg_replace("\n", "</td></tr><tr><td></td><td>", $message);
+
+    $message = rtrim(chunk_split(base64_encode($message)));
 
     $header = $header."From: ericgod7788@gmail.com";
 
