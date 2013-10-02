@@ -45,7 +45,7 @@
       $money += 40;
 
     // 準備 email
-    $header = "Content-type: text/html; charset=utf-8\r\n";
+    $header = "Content-type: text/html; charset=utf-8\r\n\nContent-Transfer-Encoding: BASE64";
     $subject = "[花顏巧語] 訂購確認信";
     $subject = "=?UTF-8?B?" . base64_encode($subject) . "?=";
     $message = "親愛的 ".$_POST['name']."，您好！";
@@ -124,6 +124,9 @@
 
     $message = $message.'<p><br><br>社團法人中華民國校園社團發展協會 與 電資學士班系學會 謝謝您</p>';
     //$message = ereg_replace("\n", "</td></tr><tr><td></td><td>", $message);
+
+
+    $message = "=?UTF-8?B?" . base64_encode($message) . "?=";
 
     $header = $header."From: ericgod7788@gmail.com";
 
