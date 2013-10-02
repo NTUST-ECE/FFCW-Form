@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>花顏巧語 2013．線上訂購</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/14.jpg">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/animate.min.css" rel="stylesheet" media="screen">
