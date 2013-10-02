@@ -1,9 +1,12 @@
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+ * <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import "compass/css3";
 @import url(http://fonts.googleapis.com/css?family=Reenie+Beanie);
+
+$bgc: #fff;
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -11,6 +14,7 @@
 html, body {
 	height: 100%;
 	/* The html and body elements cannot have any padding or margin. */
+	background-color: $bgc;
 }
 
 /* Wrapper for page content to push down footer */
@@ -36,6 +40,15 @@ html, body {
 	//padding: 0 15px;
 }
 
+
+/* Customize layout
+-------------------------------------------------- */
+
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
 select {
 	height: 34px;
 }
@@ -44,6 +57,10 @@ select {
 	p {
 		margin-top: 10px;
 	}
+}
+
+h2 + .form-group {
+	margin-top: 20px;
 }
 
 .select2-container .select2-choice {
@@ -57,7 +74,7 @@ select {
 	margin-bottom: 12px;
 
 	.description {
-		height: 220px;
+		height: 210px;
 	}
 }
 
@@ -70,14 +87,161 @@ select {
 	display: block;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-color: #fff;
+	background-color: $bgc;
 }
 
 .fix-bottom {
 	position: fixed;
 	bottom: 0;
+	left: 0;
+	width: 100% !important;
+
+	* {
+		max-width: 650px;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
 
 .displaynone {
 	display: none;
+}
+
+.products {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+@media all and (min-width: 979px) {
+
+	.col-md-4 {
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+
+	.products {
+		margin-top: 32px;
+		position: relative;
+		margin-right: -100px;
+		margin-left: -100px;
+	}
+
+
+}
+
+@media all and (max-width: 500px) {
+
+	.nav-tabs {
+		padding-bottom: 12px;
+	}
+
+	.nav-tabs > li > a, .nav-tabs > li > a:hover {
+		border-radius: 0;
+		border: none;
+	}
+
+	.nav-tabs > li.active > a {
+		border: 1px solid #ddd;
+	}
+
+	.nav-tabs > li > div {
+		padding-left: 12px !important;
+		padding-right: 12px !important;
+	}
+
+	.thumbnail {
+		margin-bottom: 12px;
+
+		.description {
+			height: auto;
+		}
+	}
+
+}
+
+
+/* Customize style
+-------------------------------------------------- */
+
+.nav-tabs > li > a {
+	color: #aaa;
+}
+
+.form-horizontal {
+
+	.form-group {
+		margin-bottom: 30px;
+	}
+
+	p {
+		margin-bottom: 20px;
+	}
+
+}
+
+.form-control, .btn-lg {
+	border-radius: 0;
+}
+
+.form-control {
+	box-shadow: none !important;
+	border: 0px;
+	border-bottom: 1px solid #777;
+	padding: 6px 8px;
+}
+
+input.form-control {
+	height: 50px;
+	font-size: 27px;
+	font-family: 'Reenie Beanie', cursive;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	overflow: visible;
+}
+
+.form-control:focus {
+	background-color: #fafafa;
+	border-bottom: 2px solid #000;
+}
+
+textarea {
+	border: 1px solid #777 !important;
+}
+
+.form-control:focus {
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+.col-lg-4.control-label {
+	padding-top: 20px;
+	margin-right: -18px;
+	font-size: 16px;
+}
+
+.col-lg-4.control-label:after {
+	content: "：";
+}
+
+.select2-container {
+	padding-top: 14px;
+}
+
+.product-amount {
+	border: 1px solid #aaa;
+}
+
+.product-amount:focus {
+	border: 2px solid #d88;
+}
+
+.thumbnail {
+	border-radius: 0;
+	//border: 1px solid darken(#ffe2e6, 10%);
+	background-color: lighten(#eee, 5%);
+	max-width: 610px;
+}
+
+.label {
+	border-radius: 0px;
 }

@@ -149,12 +149,32 @@
 
 ?>
 -->
-<?php
+    <div id="wrap">
+
+      <!-- Begin page content -->
+      <div class="container">
+          <div class="page-header">
+            <h1><?php
 if ($error == 1) {
-  echo "錯誤，請重試。或上 FB 專頁詢問。";
+  echo "發生錯誤，請重試。或上 FB 專頁詢問。";
 } else {
   echo "成功，請進信箱收垃圾信。";
 }
-?>
+            ?></h1>
+          </div>
+
+      </div>
+    </div>
+
+
+
+
+    <div id="footer">
+      <div class="container">
+        <p>　<br>花顏巧語 2013．巧克力傳情 ╳ 電影＋魔法石<br>主辦單位／社團法人中華民國校園社團發展協會　協辦單位／台灣科技大學電資學士班系學會</p>
+        <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2FFlowerFaceChocolateWords&amp;width=450&amp;height=80&amp;colorscheme=light&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;send=true&amp;appId=132913846761101" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>
+      </div>
+    </div>
+
   </body>
 </html>
