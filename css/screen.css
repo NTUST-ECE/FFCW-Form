@@ -313,6 +313,7 @@ h2 + .form-group {
   background-position: center 60% !important;
   background-size: cover;
   -moz-background-size: cover;
+  min-height: 640px;
 }
 /* line 305, ../sass/screen.scss */
 .welcome-hero .to-order {
@@ -321,7 +322,7 @@ h2 + .form-group {
   right: 18px;
 }
 
-/* line 312, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 .welcome-hero::after {
   content: "↓";
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -340,7 +341,7 @@ h2 + .form-group {
   left: 45%;
 }
 
-/* line 327, ../sass/screen.scss */
+/* line 329, ../sass/screen.scss */
 .feature {
   z-index: 20;
   background-position: center center;
@@ -351,7 +352,7 @@ h2 + .form-group {
   display: table;
   width: 100%;
 }
-/* line 337, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 .feature .content {
   width: 100%;
   display: table-cell;
@@ -362,28 +363,28 @@ h2 + .form-group {
   margin-right: auto;
   margin-left: auto;
 }
-/* line 347, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 .feature .content.inverse {
   color: white;
 }
-/* line 349, ../sass/screen.scss */
+/* line 351, ../sass/screen.scss */
 .feature .content.inverse a {
   color: #ccc;
 }
-/* line 350, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 .feature .content.inverse .btn {
   color: #111;
 }
-/* line 352, ../sass/screen.scss */
+/* line 354, ../sass/screen.scss */
 .feature p {
   font-size: 16px;
 }
-/* line 355, ../sass/screen.scss */
+/* line 357, ../sass/screen.scss */
 .feature > p > a {
   color: #52a300;
 }
 
-/* line 360, ../sass/screen.scss */
+/* line 362, ../sass/screen.scss */
 .feature:last-child {
   background-color: #000;
   font-size: 100px;
@@ -394,13 +395,13 @@ h2 + .form-group {
   margin-bottom: 30px;
 }
 
-/* line 368, ../sass/screen.scss */
+/* line 370, ../sass/screen.scss */
 .container {
   z-index: 1;
 }
 
 @media all and (max-width: 800px) {
-  /* line 375, ../sass/screen.scss */
+  /* line 377, ../sass/screen.scss */
   .feature *, .feature * *, .feature * * * {
     float: none !important;
     text-align: center !important;
