@@ -2,3 +2,4 @@
 no
 config.ru
 .sass-cache/
+tmp/
