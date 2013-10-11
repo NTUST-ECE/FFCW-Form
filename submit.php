@@ -200,13 +200,14 @@
 if ($error == 1) {
   echo "發生錯誤，請按 F5 重試。或上 FB 專頁詢問。";
 } else {
-  echo "成功，請進信箱收垃圾信。";
+  echo "訂購成功，請進信箱收垃圾信喔。";
 }
             ?></h1>
           </div>
           <p>訂單編號：<?php echo $no ?></p>
           <p><?php echo $_POST['email'] ?></p>
-
+		  <p>您還差最後一個步驟就完成訂購了！快點收 E-mail 查看下一步的指示吧！</p>
+		  <p><a href="facebook.php">回 FB 專頁</a>。什麼？你還沒按我們讚嗎？</p>
       </div>
     </div>
 
