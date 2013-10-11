@@ -308,21 +308,20 @@ h2 + .form-group {
 
 /* line 298, ../sass/screen.scss */
 .welcome-hero {
-  background-color: #ffafaf;
   background-image: url(../img/hero_bg.jpg);
   background-position: center 60% !important;
   background-size: cover;
   -moz-background-size: cover;
   min-height: 640px;
 }
-/* line 305, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 .welcome-hero .to-order {
   position: absolute;
   top: 16px;
   right: 18px;
 }
 
-/* line 314, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 .welcome-hero::after {
   content: "↓";
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -341,7 +340,7 @@ h2 + .form-group {
   left: 45%;
 }
 
-/* line 329, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 .feature {
   z-index: 20;
   background-position: center center;
@@ -352,7 +351,7 @@ h2 + .form-group {
   display: table;
   width: 100%;
 }
-/* line 339, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 .feature .content {
   width: 100%;
   display: table-cell;
@@ -363,28 +362,28 @@ h2 + .form-group {
   margin-right: auto;
   margin-left: auto;
 }
-/* line 349, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .feature .content.inverse {
   color: white;
 }
-/* line 351, ../sass/screen.scss */
+/* line 350, ../sass/screen.scss */
 .feature .content.inverse a {
   color: #ccc;
 }
-/* line 352, ../sass/screen.scss */
+/* line 351, ../sass/screen.scss */
 .feature .content.inverse .btn {
   color: #111;
 }
-/* line 354, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 .feature p {
   font-size: 16px;
 }
-/* line 357, ../sass/screen.scss */
+/* line 356, ../sass/screen.scss */
 .feature > p > a {
   color: #52a300;
 }
 
-/* line 362, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 .feature:last-child {
   background-color: #000;
   font-size: 100px;
@@ -395,13 +394,13 @@ h2 + .form-group {
   margin-bottom: 30px;
 }
 
-/* line 370, ../sass/screen.scss */
+/* line 369, ../sass/screen.scss */
 .container {
   z-index: 1;
 }
 
 @media all and (max-width: 800px) {
-  /* line 377, ../sass/screen.scss */
+  /* line 376, ../sass/screen.scss */
   .feature *, .feature * *, .feature * * * {
     float: none !important;
     text-align: center !important;
