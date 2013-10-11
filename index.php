@@ -34,7 +34,41 @@
     <div id="wrap">
 
       <!-- Begin page content -->
-      <div class="container">
+      <div class="welcome">
+        <div class="feature welcome-hero height100" style="position: relative;">
+          <a class="btn btn-default btn-lg btn-primary to-order">立即訂購！</a>
+          <div class="content" style="background-color: rgba(255,255,255, .2);">
+            <img src="img/logo.png" style="width: 400px; max-width: 95%;">
+            <h1 style="margin-top: -24px;">全國跨校巧克力傳情<br class="show-pad"> ╳ <br class="show-pad">滿滿的魔法石送給您</h1>
+            <p><br>只要參加我們的傳情活動，並<a target="_blank" href="https://www.facebook.com/FlowerFaceChocolateWords">按讚專頁</a>＋<a target="_blank" href="https://www.facebook.com/photo.php?fbid=571056289596395&set=a.570693362966021.1073741829.569792513056106">分享</a>，除了讓他／她能感受到你滿滿心意，<br>還有機會抽中《神魔之塔》魔法石六顆喔！<br>(10/22 公開抽獎，目前名額 15 位)</p>
+            <p>想和他／她一起去看場電影嗎？<br>來攤位憑<a target="_blank" href="https://www.facebook.com/FlowerFaceChocolateWords">按讚專頁證明</a>就送強檔國片《對面的女孩殺過來》早場優惠卷兩張，<br>送完為止，要搶要快！</p>
+          </div>
+
+          
+        </div>
+        <div class="feature" style="background-image: url(../img/story-1_bg.jpg);">
+          <div class="content inverse" style="background-color: rgba(0,0,0, .5);">
+            <div style="max-width: 900px; margin: auto;">
+              <br><br><br><br><br><br>
+              <img src="img/story-1.png" class="img-circle" style="float: left; margin: 23px;">
+              <br><br><br>
+              <div class="clear-phone"></div>
+
+              <h2 style="text-align: left;">讓 <a target="_blank" href="https://www.facebook.com/DivaLifeChocolatier">Diva Life 巧克力</a> 來傳遞你心中的溫暖</h2>
+              <br>
+              <p style="text-align: left;">Diva Life Chocolatier 以進口比利時黑巧克力與法國松露為主，承襲比利時傳統手工製法，堅持嚴選西非聖多美島頂級莊園的可可豆，新鮮的天然香料且降低糖分，其高濃度的可可漿成份富含 100% 天然可可脂，讓您品嚐濃郁香醇及綿滑細緻的口感之外，更多了鈣、鎂、維他命B2等營養成分為健康加分！</p>
+              <p style="text-align: left;"><a class="btn btn-default to-order">現在就訂購</a></p>
+              <br><br><br><br><br><br><br><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="feature">
+          花顏巧語
+        </div>
+      </div>
+
+      <!-- Begin order form -->
+      <div name="order" id="order" class="container">
           <div class="page-header">
             <h1>花顏巧語 2013．線上訂購單</h1>
           </div>
@@ -712,17 +746,32 @@
       $(document).ready(function() {
         $("#recipient-school").select2({ placeholder: "選擇學校" });
       });
+      $(".to-order").click(function() {
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+        $body.animate({
+          scrollTop: $('#order').offset().top
+        }, 600);
+      });
       $(".to-step-one").click(function() {
         $('#form-tab a[href="#form-you"]').tab('show');
-        $('html, body').scrollTop(0);
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+        $body.animate({
+          scrollTop: $('#order').offset().top
+        }, 400);
       });
       $(".to-step-two").click(function() {
         $('#form-tab a[href="#form-recipient"]').tab('show');
-        $('html, body').scrollTop(0);
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+        $body.animate({
+          scrollTop: $('#order').offset().top
+        }, 400);
       });
       $(".to-step-three").click(function() {
         $('#form-tab a[href="#form-product"]').tab('show');
-        $('html, body').scrollTop(0);
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+        $body.animate({
+          scrollTop: $('#order').offset().top
+        }, 400);
       });
 
       function validate_email(field, group) {
@@ -884,6 +933,7 @@
       }
 
       function viewRefresh() {
+        $('.height100').height( $(window).height() );
         cashier();
         $('#bill-container').height( $('#bill').height() + 20 );
         $('#bill').width( $('.container').width() );
