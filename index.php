@@ -63,7 +63,7 @@
         <div class="feature" id="parallaxbgc2" style="background-image: url(../img/story-2_bg.jpg); background-size: 2200px; -moz-background-size: 2200px;">
           <div class="content" style="background-color: rgba(255,255,255, .72);">
             <div style="max-width: 900px; margin: auto;">
-              <img src="img/3.jpg" class="img-circle" style="float: right; margin: 23px; width: 300px;">
+              <img src="img/3.jpg" class="img-circle" style="float: right; margin: 23px; width: 300px; max-width: 88%;">
               <br><br><br>
               <div class="clear-phone"></div>
 
