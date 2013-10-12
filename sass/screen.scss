@@ -260,6 +260,10 @@ h2 + .form-group {
 	.show-pad {
 		display: inline-block;
 	}
+
+	.welcome {
+		display: none !important;
+	}
 }
 
 @media all and (max-width: 600px) {

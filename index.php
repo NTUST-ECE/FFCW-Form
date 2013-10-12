@@ -965,7 +965,6 @@
           $('.height100').height( $(window).height() );
         else
           $('.height100').height( 680 );
-        console.log( ($(window).scrollTop() + $(window).height() - $('#parallaxbgc0').offset().top) / ($('#parallaxbgc0').height() + $(window).height()) );
         if ($(window).scrollTop() > $(window).height())
           $('.welcome-hero').addClass('displaynone');
         else
