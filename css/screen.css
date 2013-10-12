@@ -142,12 +142,6 @@ html, body {
     text-align: center !important;
   }
 }
-@media all and (max-width: 599px) {
-  /* line 151, ../sass/screen.scss */
-  .welcome {
-    display: none;
-  }
-}
 /* Customize layout
 -------------------------------------------------- */
 /* line 160, ../sass/screen.scss */
