@@ -49,7 +49,9 @@ html, body {
 	z-index: -1;
 }
 
-#order {
+.order-container {
+	position: relative;
+	z-index: 10;
 }
 
 
@@ -114,6 +116,7 @@ html, body {
 
 
 .welcome-hero {
+	z-index: 1;
 	background-image: url(../img/hero_bg.jpg);
 	background-position: center 0%;
 	background-size: cover;
@@ -426,7 +429,7 @@ h2 + .form-group {
 
 }
 
-body, #wrap {
+body, #wrap, .order-container {
 	background-image: url(../img/ricepaper2.png);
 }
 
