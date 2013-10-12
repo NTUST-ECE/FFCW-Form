@@ -778,7 +778,7 @@
         var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
         $body.animate({
           scrollTop: $('#order').offset().top
-        }, 1000);
+        }, 2100);
       });
       $(".to-step-one").click(function() {
         $('#form-tab a[href="#form-you"]').tab('show');
@@ -973,7 +973,7 @@
         //$('#parallaxbgc0').css('background-position', 'center ' + (60 + 100*(($(window).scrollTop()) / ($(window).height()))) + '%');
 
         $('#parallaxbgc1').css('background-position', 'center ' + 100*(($(window).scrollTop() + $(window).height() - $('#parallaxbgc1').offset().top) / ($('#parallaxbgc1').height() + $(window).height())) + '%');
-        $('#parallaxbgc2').css('background-position', 100*(($(window).scrollTop() + $(window).height() - $('#parallaxbgc2').offset().top) / ($('#parallaxbgc2').height() + $(window).height())) + '% center');
+        //$('#parallaxbgc2').css('background-position', 100*(($(window).scrollTop() + $(window).height() - $('#parallaxbgc2').offset().top) / ($('#parallaxbgc2').height() + $(window).height())) + '% center');
         $('#parallaxbgc3').css('background-position', 'center ' + (-72 + 160*(($(window).scrollTop() + $(window).height() - $('#parallaxbgc3').offset().top) / ($('#parallaxbgc3').height() + $(window).height()))) + '%');
 
         cashier();
