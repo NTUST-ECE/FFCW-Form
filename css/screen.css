@@ -148,7 +148,7 @@ html, body {
     text-align: center !important;
   }
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 479px) {
   /* line 154, ../sass/screen.scss */
   .welcome {
     display: none;
