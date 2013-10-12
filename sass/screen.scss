@@ -133,6 +133,14 @@ html, body {
 }
 
 
+@media all and (max-width: 1200px) {
+
+	.welcome-hero {
+		background-image: none;
+	}
+}
+
+
 @media all and (max-width: 800px) {
 
 	.feature *, .feature * *, .feature * * * { 
@@ -141,6 +149,12 @@ html, body {
 	}
 }
 
+@media all and (max-width: 600px) {
+
+	.welcome {
+		display: none;
+	}
+}
 
 
 /* Customize layout
