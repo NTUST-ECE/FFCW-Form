@@ -135,6 +135,9 @@ html, body {
 .container {
 }
 
+.show-welcome {
+	display: none;
+}
 
 @media all and (max-width: 1200px) {
 
@@ -156,8 +159,13 @@ html, body {
 @media all and (max-width: 599px) {
 
 	.welcome {
-		//display: none;
+		display: none;
 	}
+
+	.show-welcome {
+		display: inline-block;
+	}
+
 }
 
 
@@ -447,4 +455,8 @@ body, #wrap, .order-container {
 
 .nav>li>a:hover, .nav>li>a:focus {
 	background-color: rgba(0,0,0, .1);
+}
+
+.page-header {
+	border-bottom: 1px solid #ddd;
 }

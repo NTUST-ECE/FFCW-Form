@@ -100,7 +100,7 @@
           </div>
         <p class="lead"></p>
 
-        <p>您不需要離開家門一步，即可在線上完成訂購的過程，<br>只要輕鬆的動動手指頭，輸入一些資料，<br>傳情就會變得無比自在！</p>
+        <p>您不需要離開家門一步，即可在線上完成訂購的過程，<br>只要輕鬆的動動手指頭，輸入一些資料，<br>傳情就會變得無比自在！<a class="show-welcome">查看活動介紹</a></p>
 
         <form role="form" action="submit.php" method="post" onsubmit="return validate_form();">
           <ul class="nav nav-tabs" id="form-tab">
@@ -773,6 +773,10 @@
       $(document).ready(function() {
         $("#recipient-school").select2({ placeholder: "選擇學校" });
         $('.tab-pane.active').css('opacity', 1);
+      });
+      $(".show-welcome").click(function() {
+        $('.welcome').css('display', 'block');
+        $('.show-welcome').css('display', 'none');
       });
       $(".to-order").click(function() {
         var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
