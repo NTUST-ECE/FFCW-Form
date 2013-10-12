@@ -115,7 +115,7 @@ html, body {
 
 .welcome-hero {
 	background-image: url(../img/hero_bg.jpg);
-	background-position: center 60%;
+	background-position: center 0%;
 	background-size: cover;
 	-moz-background-size: cover;
 	position: fixed;
@@ -135,9 +135,6 @@ html, body {
 
 @media all and (max-width: 1200px) {
 
-	.welcome-hero {
-		background-image: none;
-	}
 }
 
 
