@@ -35,35 +35,61 @@
 
       <!-- Begin page content -->
       <div class="welcome">
-        <div class="feature welcome-hero height100" style="position: relative;">
+        <div class="feature welcome-hero height100" id="parallaxbgc0">
           <a class="btn btn-default btn-lg btn-primary to-order">立即訂購！</a>
           <div class="content" style="background-color: rgba(255,255,255, .2);">
             <img src="img/logo.png" style="width: 400px; max-width: 95%;">
             <h1 style="margin-top: -24px;">全國跨校巧克力傳情<br class="show-pad"> ╳ <br class="show-pad">滿滿的魔法石送給您</h1>
             <p><br>只要參加我們的傳情活動，並<a target="_blank" href="https://www.facebook.com/FlowerFaceChocolateWords">按讚專頁</a>＋<a target="_blank" href="https://www.facebook.com/photo.php?fbid=571056289596395&set=a.570693362966021.1073741829.569792513056106">分享</a>，除了讓他／她能感受到你滿滿心意，<br>還有機會抽中《神魔之塔》魔法石六顆喔！<br>(10/22 公開抽獎，目前名額 15 位)</p>
             <p>想和他／她一起去看場電影嗎？<br>來攤位憑<a target="_blank" href="https://www.facebook.com/FlowerFaceChocolateWords">按讚專頁證明</a>就送強檔國片《對面的女孩殺過來》早場優惠卷兩張，<br>送完為止，要搶要快！</p>
-          </div>
-
-          
+          </div>       
         </div>
-        <div class="feature" style="background-image: url(../img/story-1_bg.jpg);">
+        <div class="height100 opacity0">
+        </div>
+        <div class="feature first" id="parallaxbgc1" style="background-image: url(../img/story-1_bg.jpg);">
           <div class="content inverse" style="background-color: rgba(0,0,0, .5);">
             <div style="max-width: 900px; margin: auto;">
-              <br><br><br><br><br><br>
               <img src="img/story-1.png" class="img-circle" style="float: left; margin: 23px;">
-              <br><br><br>
               <div class="clear-phone"></div>
-
-              <h2 style="text-align: left;">讓 <a target="_blank" href="https://www.facebook.com/DivaLifeChocolatier">Diva Life 巧克力</a> 來傳遞你心中的溫暖</h2>
+              <br><br>
+              <h2 style="text-align: left;">讓 <a target="_blank" href="https://www.facebook.com/DivaLifeChocolatier" style="color: #fcc;">Diva Life 巧克力</a> 傳遞你心中的溫暖</h2>
               <br>
-              <p style="text-align: left;">Diva Life Chocolatier 以進口比利時黑巧克力與法國松露為主，承襲比利時傳統手工製法，堅持嚴選西非聖多美島頂級莊園的可可豆，新鮮的天然香料且降低糖分，其高濃度的可可漿成份富含 100% 天然可可脂，讓您品嚐濃郁香醇及綿滑細緻的口感之外，更多了鈣、鎂、維他命B2等營養成分為健康加分！</p>
-              <p style="text-align: left;"><a class="btn btn-default to-order">現在就訂購</a></p>
-              <br><br><br><br><br><br><br><br><br>
+              <p style="text-align: left;">Diva Life Chocolatier 是以進口比利時黑巧克力與法國松露為專業的精品品牌，承襲比利時傳統手工製法，堅持嚴選西非聖多美島頂級莊園的可可豆，新鮮的天然香料且降低糖分，其高濃度的可可漿成份富含 100% 天然可可脂，在濃郁香醇及綿滑細緻的口感之外，更多了鈣、鎂、維他命B2等營養成分為情人、朋友或自己健康加分！</p>
+              <br>
+              <p style="text-align: left;"><a class="btn btn-default to-order">前往訂購單，鑒賞巧克力</a></p>
             </div>
           </div>
         </div>
-        <div class="feature">
-          花顏巧語
+        <div class="feature" id="parallaxbgc2" style="background-image: url(../img/story-2_bg.jpg); background-size: 2200px; -moz-background-size: 2200px;">
+          <div class="content" style="background-color: rgba(255,255,255, .72);">
+            <div style="max-width: 900px; margin: auto;">
+              <img src="img/3.jpg" class="img-circle" style="float: right; margin: 23px; width: 300px;">
+              <br><br><br>
+              <div class="clear-phone"></div>
+
+              <h2 style="text-align: center; font-size: 42px;">真情，無遠弗屆</h2>
+              <br>
+              <p style="text-align: center;">橫跨台灣本島、外島，高達 105 所大專院校皆在傳情航程中，<br>有了這麼棒的巧克力傳情，不管她／他身在何處，總在你的守備範圍裡！</p>
+              <br>
+              <p style="text-align: center;"><a class="btn btn-default to-order">前往訂購單，查看支援範圍</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="feature" style="background-image: url(../img/story-3_bg.jpg);">
+          <div class="content inverse" id="parallaxbgc3" style="background-image: url(../img/story-3_bg2.png); background-repeat: no-repeat; background-size: 1314px; -moz-background-size: 1314px;">
+            <div style="max-width: 900px; margin: auto;">
+ 
+              <br><br><br>
+              <div class="clear-phone"></div>
+
+              <h2 style="font-size: 50px;">還有滿滿的魔法石等著你喔！</h2>
+              <br>
+              <p>參加一次活動即可獲得一次抽獎資格，參加越多次獲獎機率越大！<br>共 15 個名額，每位將可獲得 6 粒魔法石。</p>
+              <p><a class="btn btn-default to-order">現在就訂購！</a></p>
+              <p><br>更多神魔相關活動等著你，請關注我們的 <a target="_blank" href="https://www.facebook.com/FlowerFaceChocolateWords">FB 專頁</a>。</p>
+
+            </div>
+          </div>
         </div>
       </div>
 
@@ -87,7 +113,7 @@
 
           <div class="tab-content">
 
-            <div class="tab-pane active form-horizontal" id="form-you">
+            <div class="tab-pane active fade form-horizontal" id="form-you">
               <h2>STEP I：關於您</h2>
               <p>*：必填</p>
               <div class="form-group group-name">
@@ -118,7 +144,7 @@
               <a style="float: right;" class="btn btn-default btn-lg to-step-two">下一步 →</a>
             </div>
 
-            <div class="tab-pane form-horizontal" id="form-recipient">
+            <div class="tab-pane fade form-horizontal" id="form-recipient">
               <h2 class="m1">STEP II：關於他／她</h2>
               <div class="checkbox">
                 <label class="to-myself">
@@ -295,7 +321,7 @@
               <a style="float: right;" class="btn btn-default btn-lg to-step-three">下一步 →</a>
             </div>
 
-            <div class="tab-pane" id="form-product">
+            <div class="tab-pane fade" id="form-product">
               <h2>STEP III：選擇禮品</h2>
 
               <p>可以上我們的<a href="https://www.facebook.com/FlowerFaceChocolateWords/app_14167664298" target="_blank">粉絲專頁</a>看詳細的商品介紹喔！</p>
@@ -697,10 +723,11 @@
                 </div>
               </div>
 
-              <div id="bill-container"><div id="bill" class="fix-bottom">
+              <div id="bill" class="fix-bottom">
                 <h2>應付總金額：NT$<span class="money-sum">40</span></h2>
                 <p>基本費 $40<span class="product-total-message"></span><span class="ntust-discount"></span> + 情意無價。</p>
-              </div></div>
+              </div>
+              <div id="bill-container"></div>
 
               <hr>
               <h2>免費卡片代送服務</h2>
@@ -745,12 +772,13 @@
     <script>
       $(document).ready(function() {
         $("#recipient-school").select2({ placeholder: "選擇學校" });
+        $('.tab-pane.active').css('opacity', 1);
       });
       $(".to-order").click(function() {
         var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
         $body.animate({
           scrollTop: $('#order').offset().top
-        }, 600);
+        }, 1000);
       });
       $(".to-step-one").click(function() {
         $('#form-tab a[href="#form-you"]').tab('show');
@@ -933,7 +961,22 @@
       }
 
       function viewRefresh() {
-        $('.height100').height( $(window).height() );
+        if ($(window).height() > 680)
+          $('.height100').height( $(window).height() );
+        else
+          $('.height100').height( 680 );
+        console.log( ($(window).scrollTop() + $(window).height() - $('#parallaxbgc0').offset().top) / ($('#parallaxbgc0').height() + $(window).height()) );
+        if ($(window).scrollTop() > $(window).height())
+          $('.welcome-hero').addClass('displaynone');
+        else
+          $('.welcome-hero').removeClass('displaynone');
+
+        //$('#parallaxbgc0').css('background-position', 'center ' + (60 + 100*(($(window).scrollTop()) / ($(window).height()))) + '%');
+
+        $('#parallaxbgc1').css('background-position', 'center ' + 100*(($(window).scrollTop() + $(window).height() - $('#parallaxbgc1').offset().top) / ($('#parallaxbgc1').height() + $(window).height())) + '%');
+        $('#parallaxbgc2').css('background-position', 100*(($(window).scrollTop() + $(window).height() - $('#parallaxbgc2').offset().top) / ($('#parallaxbgc2').height() + $(window).height())) + '% center');
+        $('#parallaxbgc3').css('background-position', 'center ' + (-72 + 160*(($(window).scrollTop() + $(window).height() - $('#parallaxbgc3').offset().top) / ($('#parallaxbgc3').height() + $(window).height()))) + '%');
+
         cashier();
         $('#bill-container').height( $('#bill').height() + 20 );
         $('#bill').width( $('.container').width() );
@@ -942,9 +985,15 @@
           $('#bill').addClass('fix-bottom');
         else
           $('#bill').removeClass('fix-bottom');
-        setTimeout("viewRefresh()", 1000);
+        
       }
-      viewRefresh();
+
+      function update() {
+        viewRefresh();
+        setTimeout("update()", 1000);
+      }
+      update();
+
 
       $(window).scroll(function() {
         viewRefresh();
