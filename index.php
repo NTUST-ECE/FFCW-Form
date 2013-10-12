@@ -94,7 +94,7 @@
       </div>
 
       <!-- Begin order form -->
-      <div class="order-container"><div name="order" id="order" class="container">
+      <div name="order" id="order" class="container">
           <div class="page-header">
             <h1>花顏巧語 2013．線上訂購單</h1>
           </div>
@@ -748,7 +748,7 @@
           </div>
 
         </form>
-      </div></div>
+      </div>
     </div>
 
 
